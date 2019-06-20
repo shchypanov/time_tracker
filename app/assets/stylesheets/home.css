@@ -2,18 +2,20 @@
 .topmenu {
   color: fff;
   text-decoration: none;
-  position: absolute;
-  right: 0;
   width: 200px;
 }
 
 .button {
   color: white;
-  position: absolute;
-  top: 100px;
   text-decoration: none;
   padding: .8em 1em calc(.8em + 3px);
   border-radius: 3px;
   background: rgb(64,199,129);
   box-shadow: 0 -3px rgb(53,167,110) inset;
-  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
