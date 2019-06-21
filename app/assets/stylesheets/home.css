@@ -1,14 +1,18 @@
 body {
   margin: 0;
-  }
-
-.topmenu {
-  color: fff;
-  width: 200px;
 }
 
-a {
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  color: fff;
+  width: 200px;
+  list-style: none;
+}
+
+.top-menu__item a {
   text-decoration: none;
+  margin: 10px;
 }
 
 .button {
@@ -38,6 +42,7 @@ a {
 
 table {
   width: 300px;
+  height: 200px;
   border-collapse: collapse;
   margin: auto;
 }
@@ -49,7 +54,7 @@ td, th {
 }
 
 .text {
-font-family: Verdana, Arial, Helvetica, savs-serif;
-font-size: 11pt;
-color: #00ced1;
+  font-family: Verdana, Arial, Helvetica, savs-serif;
+  font-size: 11pt;
+  color: #00ced1;
 }
