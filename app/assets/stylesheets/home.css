@@ -1,0 +1,91 @@
+.container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.login {
+    margin: 60px 0 0 0;
+
+}
+
+.password {
+    margin: 30px 0 30px 0;
+}
+
+.input-width {
+    width: 40.5%;
+}
+
+.button {
+    margin-bottom: 60px;
+    text-decoration: none;
+    text-align: center;
+    border: solid 1px #9fa4a6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font: 19px "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #4e5457;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 2px #bfb8b8, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow: 0px 0px 2px #bfb8b8, inset 0px 0px 1px #ffffff;
+    box-shadow: 0px 0px 2px #bfb8b8, inset 0px 0px 1px #ffffff;
+    padding: 2px 0;
+
+}
+
+.button:hover {
+    color: #fff;
+    background: #343a40;
+}
+
+label[for="login"] {
+    margin-left: 22px;
+    margin-right: 10px;
+
+}
+
+label[for="password"] {
+    margin-right: 10px;
+}
+
+form[name="login"] {
+    width: 450px;
+}
+
+body {
+    font-size: 20px;
+}
+
+fieldset {
+    box-shadow:
+        0 0 1px rgba(0, 0, 0, 0.3),
+        0 3px 7px rgba(0, 0, 0, 0.3),
+        inset 0 1px rgba(255, 255, 255, 1);
+    padding: 0;
+}
+
+.input-login {
+    border: 1px solid #9fa4a6;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    height: 25px;
+}
+
+.input-password {
+    border: 1px solid #9fa4a6;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    height: 25px;
+}
+
+.flax-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
