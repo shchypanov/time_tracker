@@ -89,3 +89,64 @@ fieldset {
     align-content: center;
 
 }
+
+body {
+  margin: 0;
+}
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  color: fff;
+  width: 200px;
+  list-style: none;
+}
+
+.top-menu__item a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.top-b {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #afeeee;
+  width: 1900px;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+table {
+  width: 300px;
+  height: 200px;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td, th {
+  padding: 3px;
+  border: 1px solid black;
+  width: 100px;
+}
+
+.text {
+  font-family: Verdana, Arial, Helvetica, savs-serif;
+  font-size: 11pt;
+  color: #00ced1;
+}
