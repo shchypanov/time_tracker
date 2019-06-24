@@ -1,59 +1,54 @@
 <!--button of menu in header-->
 <div class="container-profile">
-<%= render "application/header" %>
-
-<!--button add in body-->
-<div class="top-b">
-  <button type="button">+ Add Task</button>
-</div>
-<div class="button">
-  <select>
-    <option>Task 1</option>
-    <option>Task 2</option>
-  </select>
-  <input type="text">
-  <button type="button">Start</button>
-  <button type="button">Pause</button>
-  <button type="button">Stop</button>
-</div>
-<!--table-->
-
-<table class="table">
-  <tr>
-    <th colspan="4">Today Task</th>
-  </tr>
-  <tr>
-    <th>
-      <p class="text">Client</p>
-    </th>
-    <th>
-      <p class="text">Task</p>
-    </th>
-    <th>
-      <p class="text">Start/Finish</p>
-    </th>
-    <th>
-      <p class="text">Full time</p>
-    </th>
-  </tr>
-  <tr>
-    <th>John</th>
-    <th>Task 1</th>
-    <th>01:00/04:00</th>
-    <th>03:00</th>
-  </tr>
-  <tr>
-    <th>John</th>
-    <th>Task 1</th>
-    <th>01:00/04:00</th>
-    <th>03:00</th>
-  </tr>
-  <tr>
-    <th>John</th>
-    <th>Task 1</th>
-    <th>01:00/04:00</th>
-    <th>03:00</th>
-  </tr>
-</table>
-</div>
+  <%= render "application/header" %>
+  <!--button add in body-->
+  <div class="top-b">
+    <button class="profile-button" type="button">+ Add Task</button>
+  </div>
+      <select form="select-task" class="form-task__select">
+        <option class="select-task__option">Task 1</option>
+        <option class="select-task__option">Task 2</option>
+      </select>
+    <input type="text" class="form-task__select">
+    <button class="profile-button" type="button">Start</button>
+    <button class="profile-button" type="button">Pause</button>
+    <button class="profile-button" type="button">Stop</button>
+  <!--table-->
+  <table class="table">
+    <tr>
+      <th colspan="4">Today Task</th>
+    </tr>
+    <tr>
+      <th>
+        <p class="text">Client</p>
+      </th>
+      <th>
+        <p class="text">Task</p>
+      </th>
+      <th>
+        <p class="text">Start/Finish</p>
+      </th>
+      <th>
+        <p class="text">Full time</p>
+      </th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>Task 1</th>
+      <th>01:00/04:00</th>
+      <th>03:00</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>Task 1</th>
+      <th>01:00/04:00</th>
+      <th>03:00</th>
+    </tr>
+    <tr>
+      <th>John</th>
+      <th>Task 1</th>
+      <th>01:00/04:00</th>
+      <th>03:00</th>
+    </tr>
+  </table>
 </div>

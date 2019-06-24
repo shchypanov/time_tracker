@@ -18,20 +18,16 @@
   margin: 10px;
 }
 
-.button {
+ .button {
   color: white;
   text-decoration: none;
   padding: .8em 1em calc(.8em + 3px);
   border-radius: 3px;
   text-align: center;
   margin-top: 20px;
-}
-
+} 
+ 
 .top-b {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-  
   margin-top: 20px;
   text-align: center;
   margin-left: -442px;
@@ -71,3 +67,34 @@ td, th {
   font-size: 11pt;
   color: #00ced1;
 }
+
+.profile-button {
+    color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border: 1px solid transparent;
+  padding: 11px 11px;
+border-radius: 4px;
+}
+.profile-button:focus {
+ box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+ background-color: #0069d9;
+   border-color: #0069d9;
+}
+.form-task__select {
+width: 20%;
+padding: 5px 20px;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 4px;
+height: 50px;
+}
+.form-task__select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  height: 50px;
+  }
