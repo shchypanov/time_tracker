@@ -1,15 +1,14 @@
 <div class="container">
-  <form name="login" method="post" action="URL">
-    <div class="form-border">
-      <div class="login">
-        <label for="login">Login:</label>
-        <input class="form__input input-width" type="email" maxlength="25" size="20" name="login" autocomplete="on" required autofocus>
-      </div>
-      <div class="password">
-        <label for="password">Password:</label>
+  <form class="form-border" name="login" method="post" action="URL">
+    <div class="input-wrap">
+      <label for="login">Login:
+        <input class="form__input" type="email" maxlength="25" size="20" name="login" autocomplete="on" required autofocus>
+      </label>
+      
+      <label for="password">Password:
         <input class="form__input" type="password" maxlength="25" size="20" name="password" autocomplete="off" required>
-      </div>
-      <input class="form__button" type="submit" name="submit" value="Submit">
+      </label>
     </div>
+    <input class="form__button" type="submit" name="submit" value="Submit">
   </form>
 </div>
