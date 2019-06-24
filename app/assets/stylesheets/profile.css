@@ -1,5 +1,8 @@
-body {
+* {
   margin: 0;
+}
+.container-profile {
+  height: 100vh;
 }
 
 .top-menu {
@@ -25,6 +28,10 @@ body {
 }
 
 .top-b {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  
   margin-top: 20px;
   text-align: center;
   margin-left: -442px;
