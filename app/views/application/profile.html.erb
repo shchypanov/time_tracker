@@ -2,17 +2,18 @@
 <div class="container-profile">
   <%= render "application/header" %>
   <!--button add in body-->
-  <div class="top-b">
-    <button class="profile-button" type="button">+ Add Task</button>
-  </div>
-      <select form="select-task" class="form-task__select">
-        <option class="select-task__option">Task 1</option>
-        <option class="select-task__option">Task 2</option>
-      </select>
+  <button class="button-addTask" type="button">+ Add Task
+  </button>
+  <div class="container-second">
+    <select form="select-task" class="form-task__select">
+      <option class="select-task__option">Task 1</option>
+      <option class="select-task__option">Task 2</option>
+    </select>
     <input type="text" class="form-task__select">
     <button class="profile-button" type="button">Start</button>
     <button class="profile-button" type="button">Pause</button>
     <button class="profile-button" type="button">Stop</button>
+  </div>
   <!--table-->
   <table class="table">
     <tr>

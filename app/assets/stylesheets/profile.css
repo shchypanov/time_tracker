@@ -3,6 +3,7 @@
 }
 .container-profile {
   height: 100vh;
+  text-align: center;
 }
 
 .top-menu {
@@ -27,18 +28,17 @@
   margin-top: 20px;
 } 
  
-.top-b {
+/* .top-b {
   margin-top: 20px;
   text-align: center;
   margin-left: -442px;
-}
+} */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #afeeee;
-  width: 1900px;
   margin: 0;
   padding: 0;
   height: 100px;
@@ -68,7 +68,7 @@ td, th {
   color: #00ced1;
 }
 
-.profile-button {
+.button-addTask {
     color: #fff;
   background-color: #007bff;
   border-color: #007bff;
@@ -76,7 +76,7 @@ td, th {
   padding: 11px 11px;
 border-radius: 4px;
 }
-.profile-button:focus {
+.button-addTask:focus {
  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
  background-color: #0069d9;
    border-color: #0069d9;
