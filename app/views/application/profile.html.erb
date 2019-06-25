@@ -1,15 +1,15 @@
 <!--button of menu in header-->
 <%= render "application/header" %>
 <!--button add in body-->
-<div class="container-profile">
-  <button class="profile_button profile_button_addTask" type="button">+ Add Task
+<div class="profile_container">
+  <button class="profile_button profile_button-addTask" type="button">+ Add Task
   </button>
   <div class="profile_container-second">
-    <select form="profile_select-client" class="profile_form-client__select">
-      <option class="profile_select-client__option">Task 1</option>
-      <option class="profile_select-client__option">Task 2</option>
+    <select form="profile_select-client_input" class="profile_select-client_input">
+      <option class="profile_select-client_option">Task 1</option>
+      <option class="profile_select-client_option">Task 2</option>
     </select>
-    <input type="text" class="profile_form-client__select" placeholder="Task description">
+    <input type="text" class="profile_select-client_input" placeholder="Task description">
     <button class="profile_button profile_button-start" type="button">Start</button>
     <button class="profile_button profile_button-pause" type="button">Pause</button>
     <button class="profile_button profile_button-stop" type="button">Stop</button>
@@ -18,20 +18,21 @@
   <table class="profile_table">
     <thead>
       <tr>
-        <th class="profile_table_th-headline" colspan="4">Today task</th>
+        <th class="profile_table-th-headline" colspan="4">Today task
+        </th>
       </tr>
       <tr>
         <th>
-          <p class="profile_table_title">Client</p>
+          <p class="profile_table-title">Client</p>
         </th>
         <th>
-          <p class="profile_table_title">Task</p>
+          <p class="profile_table-title">Task</p>
         </th>
         <th>
-          <p class="profile_table_title">Start/Finish</p>
+          <p class="profile_table-title">Start/Finish</p>
         </th>
         <th>
-          <p class="profile_table_title">Full time</p>
+          <p class="profile_table-title">Full time</p>
         </th>
       </tr>
     </thead>
