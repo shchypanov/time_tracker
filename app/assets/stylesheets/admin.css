@@ -8,12 +8,15 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-  height: 50px;
+  flex-wrap: wrap;
 }
 .search-users input{
   height: 100%;
   padding: 5px 15px;
   box-sizing: border-box;
+}
+.admin-row-form{
+  margin-top: 20px;
 }
 .search-users input:focus, .tab-admin li button:focus{
   outline: 0;
@@ -21,11 +24,13 @@
 .search-users input:first-child{
   width: 80%;
   border-radius: 20px 0 0 20px;
+  height: 50%;
 }
-.search-users input:last-child{
+.admin-submit{
   width: 20%;
   letter-spacing: 5px;
   border-radius: 0 20px 20px 0;
+  height: 50%;
 }
 .user-tasks{
   width: 100%;
@@ -67,4 +72,17 @@
 }
 #tabs2, #tabs3 {
   display: none;
+}
+.admin-row-form select{
+  height: 50px;
+  width: 300px;
+  max-width: 300px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.admin-row-form select:focus{
+  outline: none;
+}
+.admin-row-form{
+  display: block;
 }
