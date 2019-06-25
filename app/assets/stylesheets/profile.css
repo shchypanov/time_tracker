@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #afeeee;
-  width: 1900px;
+  width: 100%;
   margin: 0;
   padding: 0;
   height: 100px;
@@ -48,7 +48,7 @@ body {
 
 table {
   width: 300px;
-  height: 200px;
+  /* height: 200px; */
   border-collapse: collapse;
   margin: auto;
 }

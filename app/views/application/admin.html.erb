@@ -1,0 +1,56 @@
+<%= render "application/header" %>
+<div class="wrapper">
+    <ul class="tab-admin">
+      <li>
+        <button type="button">Tab 1</button>
+      </li>
+      <li>
+        <button type="button">Tab 2</button>
+      </li>
+      <li>
+        <button type="button">Tab 3</button>
+      </li>
+    </ul>
+    <form class="search-users" action="" method="post">
+      <input type="text" name="" placeholder="Search user ...">
+      <input type="submit" name="" value="Search">
+    </form>
+    <div id="user-table" class="user-table">
+      <table class="user-tasks">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Task</th>
+              <th>Start/Finish</th>
+              <th>Full Time</th>
+              <th>User</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for i in 0..1000 do %>
+              <tr>
+                <th>Project <%= i %></th>
+                <th>Create new page</th>
+                <th>01:00/04:00</th>
+                <th>03:00</th>
+                <th>User 1</th>
+              </tr>
+            <% end %>
+          </tbody>
+      </table>
+    </div>
+</div>
+<script>
+window.onresize = function (even) {
+  var table = document.getElementById('user-table');
+  if( window.innerHeight >= 900 ){
+    table.style.height="600px"
+  }
+  if( window.innerHeight <= 900 ){
+    table.style.height="400px"
+  }
+  if( window.innerHeight <= 700 ){
+    table.style.height="300px"
+  }
+}
+</script>

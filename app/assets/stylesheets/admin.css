@@ -1,0 +1,67 @@
+.wrapper{
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+.search-users{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+.search-users input{
+  height: 100%;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+.search-users input:focus, .tab-admin li button:focus{
+  outline: 0;
+}
+.search-users input:first-child{
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+}
+.search-users input:last-child{
+  width: 20%;
+  letter-spacing: 5px;
+  border-radius: 0 20px 20px 0;
+}
+.user-tasks{
+  width: 100%;
+}
+.user-table{
+  max-height: 600px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  margin-top: 50px;
+}
+.user-tasks thead{
+  background-color: #afeeee;
+}
+.user-tasks th{
+  padding: 5px;
+  border: none;
+}
+.user-tasks tr{
+  border-top: 1px solid #6c757d;
+}
+.user-tasks tbody tr:last-child{
+  border-bottom: 1px solid #6c757d;
+}
+.user-tasks tbody tr:nth-child(even){
+  background-color: #DDDDDD;
+}
+.tab-admin{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0px;
+}
+.tab-admin li{
+  margin-right: 10px;
+}
+.tab-admin li button{
+  padding: 5px 20px;
+  border-radius: 30px;
+}
