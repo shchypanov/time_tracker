@@ -1,9 +1,10 @@
 * {
   margin: 0;
+  font: 25px "Times New Roman", Times, serif;
 }
+
 .container-profile {
-  height: 100vh;
-  text-align: center;
+  width: 100%;
 }
 
 .top-menu {
@@ -18,21 +19,6 @@
   text-decoration: none;
   margin: 10px;
 }
-
- .button {
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  text-align: center;
-  margin-top: 20px;
-} 
- 
-/* .top-b {
-  margin-top: 20px;
-  text-align: center;
-  margin-left: -442px;
-} */
 
 .header {
   display: flex;
@@ -49,52 +35,73 @@
   height: 50px;
 }
 
-table {
+/* table {
   width: 300px;
   height: 200px;
   border-collapse: collapse;
   margin: auto;
 }
 
-td, th {
+td,
+th {
   padding: 3px;
   border: 1px solid black;
   width: 100px;
 }
-
-.text {
-  font-family: Verdana, Arial, Helvetica, savs-serif;
-  font-size: 11pt;
-  color: #00ced1;
-}
-
-.button-addTask {
-    color: #fff;
+ */
+.btn {
+  color: #fff;
   background-color: #007bff;
   border-color: #007bff;
   border: 1px solid transparent;
   padding: 11px 11px;
-border-radius: 4px;
+  border-radius: 4px;
+  height: 54px;
+  margin-right: 30px;
 }
+
+.button-addTask {
+  text-align: left;
+  margin: 45px 45px;
+}
+
+
 .button-addTask:focus {
- box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
- background-color: #0069d9;
-   border-color: #0069d9;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5);
+  background-color: #0069d9;
+  border-color: #0069d9;
+  text-align: left;
 }
-.form-task__select {
-width: 20%;
-padding: 5px 20px;
-color: #495057;
-background-color: #fff;
-background-clip: padding-box;
-border: 1px solid #ced4da;
-border-radius: 4px;
-height: 50px;
+
+.form-client__select {
+  width: 20%;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-right: 30px;
 }
-.form-task__select:focus {
+
+.form-client__select:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
   height: 50px;
-  }
+}
+
+.container-second {
+  margin-left: 45px;
+  margin-bottom: 45px;
+}
+
+select option.select-client_option {
+  font-size: 20px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}

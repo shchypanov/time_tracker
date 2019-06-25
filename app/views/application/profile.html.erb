@@ -1,18 +1,18 @@
 <!--button of menu in header-->
-<div class="container-profile">
   <%= render "application/header" %>
   <!--button add in body-->
-  <button class="button-addTask" type="button">+ Add Task
+  <div class="container-profile">
+  <button class="btn button-addTask" type="button">+ Add Task
   </button>
   <div class="container-second">
-    <select form="select-task" class="form-task__select">
-      <option class="select-task__option">Task 1</option>
-      <option class="select-task__option">Task 2</option>
+    <select form="select-client" class="form-client__select">
+      <option class="select-client_option">Task 1</option>
+      <option class="select-client_option">Task 2</option>
     </select>
-    <input type="text" class="form-task__select">
-    <button class="profile-button" type="button">Start</button>
-    <button class="profile-button" type="button">Pause</button>
-    <button class="profile-button" type="button">Stop</button>
+    <input type="text" class="form-client__select">
+    <button class="btn button-start" type="button">Start</button>
+    <button class="btn button-pause" type="button">Pause</button>
+    <button class="btn button-stop" type="button">Stop</button>
   </div>
   <!--table-->
   <table class="table">
