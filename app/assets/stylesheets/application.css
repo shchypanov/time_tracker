@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+ * { margin: 0;
+  font: 25px "Times New Roman", Times, serif;
+}
