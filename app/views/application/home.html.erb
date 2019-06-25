@@ -1,10 +1,18 @@
+<% if user_signed_in? %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Log in", login_path %>
+  <%= link_to "Registration", signup_path %>
+<% end %>
+
+
 <div class="container">
   <form class="form-border" name="login" method="post" action="URL">
     <div class="input-wrap">
       <label for="login">Login:
         <input class="form__input" type="email" maxlength="25" size="20" name="login" autocomplete="on" required autofocus>
       </label>
-      
+
       <label for="password">Password:
         <input class="form__input" type="password" maxlength="25" size="20" name="password" autocomplete="off" required>
       </label>
