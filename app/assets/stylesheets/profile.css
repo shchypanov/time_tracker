@@ -4,7 +4,8 @@
 }
 
 .container-profile {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .top-menu {
@@ -48,16 +49,16 @@
 
 .profile_button_addTask {
   text-align: left;
-  margin: 45px 45px;
+  margin: 45px 0;
 }
-
 
 .profile_button:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5);
   background-color: #0069d9;
   border-color: #0069d9;
 }
-.profile_button:not(:first-child){
+
+.profile_button:not(:first-child) {
   width: 10%;
 }
 
@@ -71,10 +72,11 @@
 
 
 .profile_button-stop {
-    background-color: #ff0000c4;
+  background-color: #ff0000c4;
 }
+
 .profile_button-stop:focus {
-    background-color: #ff0000c4;
+  background-color: #ff0000c4;
 }
 
 .profile_form-client__select {
@@ -98,8 +100,7 @@
 }
 
 .profile_container-second {
-  margin-left: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 100px;
 }
 
 select option.profile_select-client__option {
@@ -107,16 +108,18 @@ select option.profile_select-client__option {
 }
 
 .profile_table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   overflow: scroll;
 }
 
-.profile_table td, .profile_table th {
+.profile_table td,
+.profile_table th {
   padding: 12px;
 
 }
+
 .profile_table thead tr th {
   border-top: 3px solid #dee2e6;
   border-bottom: 3px solid #dee2e6;
@@ -126,10 +129,12 @@ select option.profile_select-client__option {
   font-weight: 600;
   font-size: 28px;
 }
+
 .profile_table thead tr th p.profile_table_title {
   font-weight: 600;
   font-size: 26px;
 }
+
 .profile_table tbody tr th {
   border-bottom: 1px solid #dee2e6;
 }
