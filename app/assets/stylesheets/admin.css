@@ -65,3 +65,6 @@
   padding: 5px 20px;
   border-radius: 30px;
 }
+#tabs2, #tabs3 {
+  display: none;
+}
