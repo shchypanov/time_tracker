@@ -1,5 +1,6 @@
-body {
-  margin: 0;
+.profile_container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .top-menu {
@@ -15,27 +16,11 @@ body {
   margin: 10px;
 }
 
-.button {
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.top-b {
-  margin-top: 20px;
-  text-align: center;
-  margin-left: -442px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #afeeee;
-  width: 1900px;
   margin: 0;
   padding: 0;
   height: 100px;
@@ -46,21 +31,105 @@ body {
   height: 50px;
 }
 
-table {
-  width: 300px;
-  height: 200px;
+.profile_button {
+  color: #fff;
+  border-color: #007bff;
+  border: 1px solid transparent;
+  padding: 11px 11px;
+  border-radius: 6px;
+  height: 54px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.profile_button-addTask {
+  text-align: left;
+  background-color: #007bff;
+  margin: 45px 0;
+  width: 155px;
+}
+
+.profile_button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5);
+  border-color: #0069d9;
+  opacity: 0.65;
+}
+
+.profile_container-second .profile_button {
+  width: 155px;
+}
+
+.profile_button-start {
+  background-color: #69e052;
+}
+
+.profile_button-stop {
+  background-color: #ff0000c4;
+}
+
+.profile_button-pause {
+  background-color: #007bff;
+}
+
+.profile_select-client__input {
+  width: 20%;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  padding-left: 10px;
+}
+
+.profile_select-client__input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+  height: 50px;
+}
+
+.profile_container-second {
+  margin-bottom: 100px;
+}
+
+select option.profile_select-client__option {
+  font-size: 20px;
+}
+
+.profile_table {
+  width: 100%;
+  margin: 0 auto;
   border-collapse: collapse;
-  margin: auto;
+  overflow: scroll;
 }
 
-td, th {
-  padding: 3px;
-  border: 1px solid black;
-  width: 100px;
+.profile_table td,
+.profile_table th {
+  padding: 12px;
 }
 
-.text {
-  font-family: Verdana, Arial, Helvetica, savs-serif;
-  font-size: 11pt;
-  color: #00ced1;
+.profile_table thead tr th {
+  border-top: 3px solid #dee2e6;
+  border-bottom: 3px solid #dee2e6;
+}
+
+.profile_table thead tr th:first-child {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.profile_table thead tr th p.profile_table-title {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.profile_table tbody tr th {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.profile_table tbody tr:nth-child(even) {
+  background-color: #eae9e9;
 }
