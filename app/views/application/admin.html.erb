@@ -5,7 +5,7 @@
         <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin_search-tabs')">Tasks</button>
       </li>
       <li>
-        <button class="admin_tablinks" type="button" onclick="select_tab(event, 'tabs2')">Tab 2</button>
+        <button class="admin_tablinks" type="button" onclick="select_tab(event, 'tabs2')">Add new project</button>
       </li>
       <li>
         <button class="admin_tablinks" type="button" onclick="select_tab(event, 'tabs3')">Tab 3</button>
@@ -62,10 +62,45 @@
     <div id="tabs2" class="admin_tabcontent">
       <form class="admin-create-new-projects">
         <div>
-          <label for=""></label>
+          <label for="admin-create-user">User:</label>
+          <input id="admin-create-user" placeholder="Write user ..." type="text" name="admin-create-user">
         </div>
-
+        <div>
+          <label for="admin-select-customer">Select customer:</label>
+          <select id="admin-select-customer">
+            <option value="Project">customer 1</option>
+            <option value ="Project">customer 2</option>
+            <option value="Project">customer 3</option>
+            <option value="Project">customer 4</option>
+          </select>
+        </div>
+        <div>
+          <a href="#">Add project</a>
+        </div>
       </form>
+      <div class="admin-block-new-project">
+        <table class="admin-table-new-project">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Customer</th>
+                <th>Edit / Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for i in 0..100 do %>
+              <tr>
+                <th>Name 1</th>
+                <th>User 1</th>
+                <th class="admin-table-links">
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </th>
+              </tr>
+              <% end %>
+            </tbody>
+        </table>
+      </div>
     </div>
     <div id="tabs3" class="admin_tabcontent">
       <p>tabs3</p>

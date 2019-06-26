@@ -14,6 +14,13 @@
   width: 45%;
 }*/
 
+.input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .form__button {
   margin-top: 30px;
@@ -30,7 +37,7 @@
   padding: 2px 0;
   padding: 5px 15px;
   width: 40.5%;
-
+  
 }
 
 .form__button:hover {
@@ -71,6 +78,7 @@ fieldset {
   height: 25px;
   padding: 5px 15px;
   margin-bottom: 15px;
+  margin: 10px;
 }
 
 
