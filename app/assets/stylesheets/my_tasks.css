@@ -1,33 +1,75 @@
-.my_tasks_btn-projects {
-
+body {
+  margin: 0;
 }
 
-.my_tasks_btn-data {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #afeeee;
+  width: 1900px;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
 
+.field_input input {
+  width: 1600px;
 }
 
 .table-task {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+}
 
+th {
+  background: #bcebdd;
+  color: white;
+  text-shadow: 0 1px 1px #2d2020;
+  padding: 10px 20px;
+}
+
+th, td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
 
 }
 
-.table-text {
-  border: 1px solid #3a80e8;
-  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  height: 50px;
-  padding: 5px 15px;
+td {
+  padding: 10px 20px;
+  background: #f8e391;
 }
 
-.table-my-task {
-  font-family: fantasy;
-  border: 1px solid #3a80e8;
-  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  height: 50px;
-  padding: 5px 15px;
+tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
 }
 
-.center {
-  position: absolute;
+tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+
+section {
+  margin: 0 1.5% 24px 1.5%;
+  padding: 10px;
+}
+
+.task {
+  text-align: center;
 }

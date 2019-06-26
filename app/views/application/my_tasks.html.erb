@@ -1,6 +1,6 @@
-<div class="center">
-<!--btn project-->
-<div class="my_tasks_btn-projects">
+<%= render "application/header" %>
+
+<section>
   <select>
     <option>Project 1</option>
     <option>Project 2</option>
@@ -8,55 +8,44 @@
     <option>Project 4</option>
     <option>Project 5</option>
   </select>
-
-<!--btn date-->
-<div class="my_tasks_btn-data">
-
-    <p>Date:
-      <input type="date" name="calendar">
-
-  </div>
-  <form>
-    <input name="s" placeholder="Search here..." type="search">
-    <button type="submit">Search</button>
-  </form>
-  </div>
-<!--table-->
+  <p>Date:
+    <input type="date" name="calendar">
+    <div class="field_input">
+      <input name="s" placeholder="Search here..." type="search">
+      <button type="submit">Search</button>
+    </div>
+  </section>
   <table class="table-task">
     <tr>
-      <th colspan="4">My Tasks</th>
-    </tr>
-    <tr>
-      <th>
-        <p class="table-text">Project</p>
-      </th>
-      <th>
-        <p class="table-text">Task</p>
-      </th>
-      <th>
-        <p class="table-text">Start/Finish</p>
-      </th>
-      <th>
-        <p class="table-text">Full time</p>
+      <th colspan="4">
+        <p class="task">My Tasks</p>
       </th>
     </tr>
     <tr>
-      <th>John</th>
-      <th>Task 1</th>
-      <th>01:00/04:00</th>
-      <th>03:00</th>
+      <td>Project</td>
+      <td>Task</td>
+      <td>Start/Finish</td>
+      <td>Full Time</td>
     </tr>
     <tr>
-      <th>Poul</th>
-      <th>Task 2</th>
-      <th>01:00/04:00</th>
-      <th>03:00</th>
+      <td>project 1</td>
+      <td>task1</td>
+      <td>1:00/3:00</td>
+      <td>2:00</td>
+
     </tr>
     <tr>
-      <th>Sara</th>
-      <th>Task 3</th>
-      <th>01:00/04:00</th>
-      <th>03:00</th>
+      <td>project 2</td>
+      <td>task2</td>
+      <td>1:00/3:00</td>
+      <td>2:00</td>
+
+    </tr>
+    <tr>
+      <td>project 3</td>
+      <td>task3</td>
+      <td>1:00/3:00</td>
+      <td>2:00</td>
+
     </tr>
   </table>
-  </div>
