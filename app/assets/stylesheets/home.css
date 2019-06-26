@@ -1,5 +1,6 @@
 * {
-  font: 21px "Times New Roman", Times, serif;
+  font: 16px "Times New Roman", Times, sans-serif;
+  font-family: sans-serif;
 }
 
 .container {
