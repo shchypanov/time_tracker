@@ -1,4 +1,3 @@
 class ApplicationController < ActionController::Base
-  def profile
-  end
+    before_action :authenticate_user!
 end
