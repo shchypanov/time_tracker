@@ -1,0 +1,13 @@
+<div class="field">
+
+</div>
+<%= form_for(@project, remote: true, html: {'data-type': 'json'}) do |form| %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
