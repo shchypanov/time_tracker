@@ -13,8 +13,27 @@ body {
   height: 100px;
 }
 
+.name-table {
+  background: maroon; /* Цвет фона таблицы */
+
+}
+
+.all-btn {
+  flex-direction: row;
+  display: flex;
+  max-width: 1200px;
+  margin: 0;
+}
+
 .field_input input {
   width: 1600px;
+}
+
+.all-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .table-task {
@@ -23,51 +42,50 @@ body {
   border-radius: 10px;
   border-spacing: 0;
   text-align: center;
+  width: 100%;
 }
 
-th {
-  background: #bcebdd;
+.table-task th {
+  background:  #afeeee;
   color: white;
   text-shadow: 0 1px 1px #2d2020;
   padding: 10px 20px;
 }
 
-th, td {
+.table-task th, td {
   border-style: solid;
   border-width: 0 1px 1px 0;
   border-color: white;
 }
 
-th:first-child, td:first-child {
+.table-task th:first-child, td:first-child {
   text-align: left;
 }
 
-th:first-child {
+.table-task th:first-child {
   border-top-left-radius: 10px;
 }
 
-th:last-child {
+.table-task th:last-child {
   border-top-right-radius: 10px;
-
 }
 
-td {
+.table-task td {
   padding: 10px 20px;
-  background: #f8e391;
+  background: #a5a9cc;
 }
 
-tr:last-child td:first-child {
+.table-task tr:last-child td:first-child {
   border-radius: 0 0 0 10px;
 }
 
-tr:last-child td:last-child {
+.table-task tr:last-child td:last-child {
   border-radius: 0 0 10px 0;
 }
 
-
 section {
-  margin: 0 1.5% 24px 1.5%;
-  padding: 10px;
+  margin: 10px 1.5% 50px 10px;
+  padding: 30px;
 }
 
 .task {

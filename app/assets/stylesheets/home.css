@@ -1,5 +1,6 @@
 * {
-  font: 21px "Times New Roman", Times, serif;
+  font: 16px "Times New Roman", Times, sans-serif;
+  font-family: sans-serif;
 }
 
 .container {
@@ -12,6 +13,13 @@
 /*.form__input {
   width: 45%;
 }*/
+
+.input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 .form__button {
@@ -29,7 +37,7 @@
   padding: 2px 0;
   padding: 5px 15px;
   width: 40.5%;
-
+  
 }
 
 .form__button:hover {
@@ -70,6 +78,7 @@ fieldset {
   height: 25px;
   padding: 5px 15px;
   margin-bottom: 15px;
+  margin: 10px;
 }
 
 
