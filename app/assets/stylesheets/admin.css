@@ -1,3 +1,4 @@
+
 .wrapper{
   max-width: 1200px;
   margin: 0px auto;
@@ -11,26 +12,21 @@
   flex-wrap: wrap;
 }
 .search-users input{
-  height: 100%;
   padding: 5px 15px;
   box-sizing: border-box;
 }
 .admin-row-form{
   margin-top: 20px;
 }
-.search-users input:focus, .tab-admin li button:focus{
-  outline: 0;
-}
-.search-users input:first-child{
-  width: 80%;
-  border-radius: 20px 0 0 20px;
-  height: 50%;
-}
 .admin-submit{
-  width: 20%;
-  letter-spacing: 5px;
-  border-radius: 0 20px 20px 0;
-  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  background:#007bff;
+  color: #fff;
+  border:none;
+}
+.admin-submit:hover{
+  background: #0069d9;
 }
 .user-tasks{
   width: 100%;
@@ -68,21 +64,42 @@
 }
 .tab-admin li button{
   padding: 5px 20px;
-  border-radius: 30px;
 }
 #tabs2, #tabs3 {
   display: none;
 }
-.admin-row-form select{
+.search-users select{
   height: 50px;
-  width: 300px;
+  width: 100%;
   max-width: 300px;
   padding: 5px;
-  margin-right: 20px;
-}
-.admin-row-form select:focus{
-  outline: none;
+  cursor: pointer;
+  background-color: #fff;
 }
 .admin-row-form{
   display: block;
+}
+.search-users label{
+  display: block;
+  margin-bottom: 10px;
+}
+.search-users div:nth-child(1){
+  width: 38%;
+}
+.search-users div:nth-child(2){
+  width: 18%;
+}
+.search-users div:nth-child(3){
+  width: 18%;
+}
+.search-users div:nth-child(4){
+  width: 18%;
+  position: relative;
+}
+#admin-search-user,#admin-select-project, .search-users input{
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ced4da;
 }
