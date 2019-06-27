@@ -5,14 +5,16 @@
   <button class="profile_button profile_button-addTask" type="button" id="profile_button-addTask">+ Add Task
   </button>
   <div id="profile_container-second">
-    <select class="profile_select-client__input">
-      <option class="profile_select-client__option">Task 1</option>
-      <option class="profile_select-client__option">Task 2</option>
-    </select>
-    <input type="text" class="profile_select-client__input" placeholder="Task description">
-    <button class="profile_button profile_button-start" type="button">Start</button>
-    <button class="profile_button profile_button-pause" type="button">Pause</button>
-    <button class="profile_button profile_button-stop" type="button">Stop</button>
+    <div class="profile_block-client" id="profile_block-client">
+      <select class="profile_select-client__input" id="profile_select-client__select">
+        <option class="profile_select-client__option">Task 1</option>
+        <option class="profile_select-client__option">Task 2</option>
+      </select>
+      <input type="text" class="profile_select-client__input" placeholder="Task description" id="profile_select-client__input">
+      <button class="profile_button profile_button-start" type="button">Start</button>
+      <button class="profile_button profile_button-pause" type="button">Pause</button>
+      <button class="profile_button profile_button-stop" type="button">Stop</button>
+    </div>
   </div>
   <!--table-->
   <table class="profile_table">

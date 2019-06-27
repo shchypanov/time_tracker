@@ -135,3 +135,7 @@ select option.profile_select-client__option {
 .profile_table tbody tr:nth-child(even) {
   background-color: #eae9e9;
 }
+
+.profile_block-client {
+  margin-bottom: 45px;
+}
