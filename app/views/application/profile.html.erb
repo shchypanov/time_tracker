@@ -6,14 +6,14 @@
   </button>
   <div id="profile_container-second">
     <div class="profile_block-client" id="profile_block-client">
-      <select class="profile_select-client__input" id="profile_select-client__select">
+      <select class="profile_select-client__input" id="profile_select-client__select" name="project_id[]">
         <option class="profile_select-client__option">Task 1</option>
         <option class="profile_select-client__option">Task 2</option>
       </select>
-      <input type="text" class="profile_select-client__input" placeholder="Task description" id="profile_select-client__input">
-      <button class="profile_button profile_button-start" type="button">Start</button>
-      <button class="profile_button profile_button-pause" type="button">Pause</button>
-      <button class="profile_button profile_button-stop" type="button">Stop</button>
+      <input type="text" class="profile_select-client__input" placeholder="Task description" id="profile_select-client__input" name="description[]">
+      <button class="profile_button profile_button-start" type="button" id="profile_button-start">Start</button>
+      <button class="profile_button profile_button-pause" type="button" id="profile_button-pause">Pause</button>
+      <button class="profile_button profile_button-stop" type="button" id="profile_button-stop">Stop</button>
     </div>
   </div>
   <!--table-->

@@ -66,10 +66,12 @@
 
 .profile_button-stop {
   background-color: #ff0000c4;
+  display: none;
 }
 
 .profile_button-pause {
   background-color: #007bff;
+  display: none;
 }
 
 .profile_select-client__input {
