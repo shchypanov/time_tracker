@@ -96,7 +96,6 @@
 
 #profile_container-second {
   margin-bottom: 100px;
-  display: none;
 }
 
 select option.profile_select-client__option {
@@ -140,4 +139,8 @@ select option.profile_select-client__option {
 
 .profile_block-client {
   margin-bottom: 45px;
+}
+
+.profile_block-client form {
+  margin: 20px 0;
 }
