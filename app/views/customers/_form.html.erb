@@ -1,18 +1,17 @@
-<%= form_for(@customer, remote: true, html: {'data-type': 'json'}) do |form| %>
+<%= form_for(@customer, remote: true, html: {'data-type': 'json', 'class':"admin-create-new-customers", 'id': "form-admin-create-new-customers"}) do |form| %>
 <div class="field">
   <%= form.label :name %>
-  <%= form.text_field :name %>
+  <%= form.text_field :name, html: {id: "admin-create-customer", form: "form-admin-create-new-customers", name: "admin-create-customer"} %>
 </div>
 <div class="actions">
-  <%= form.submit %>
+  <%= form.submit "Add customer", html: {id:"input-admin-create-customer-submit", name: "admin-create-customer-submit", form: "form-admin-create-new-customers"} %>
 </div>
-<form class="admin-create-new-customers" id="form-admin-create-new-customers">
-  <div>
-    <label for="admin-create-customer">User:</label>
-    <input id="admin-create-customer" placeholder="Write customer ..." type="text" name="admin-create-customer" required form="form-admin-create-new-customers">
-  </div>
-  <div>
-    <input type="submit" name="admin-create-customer-submit" id="input-admin-create-customer-submit" value="Add customer" form="form-admin-create-new-customers">
-  </div>
-</form>
+<!--   <div>
+  <label for="admin-create-customer">User:</label>
+  <input id="admin-create-customer" placeholder="Write customer ..." type="text" name="admin-create-customer" required form="form-admin-create-new-customers">
+</div>
+<div>
+  <input type="submit" name="admin-create-customer-submit" id="input-admin-create-customer-submit" value="Add customer" form="form-admin-create-new-customers">
+</div>
+</form> -->
 <% end %>

@@ -24,7 +24,6 @@ function select_tab(evt, select_tab) {
   evt.currentTarget.className += " active";
 }
 
-
 window.addEventListener("DOMContentLoaded", function() {
 
   var adminCreateCustomerSubmit = document.getElementById("input-admin-create-customer-submit");
