@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
 
-  def  create
+  def create
     task = Task.new(task_params)
   if customer.save
     render json: {}, status: 200
