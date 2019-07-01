@@ -7,5 +7,7 @@ class User < ApplicationRecord
   def admin?
     role == 'admin'
   end
-  
+
+  has_many :tasks
+
 end
