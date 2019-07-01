@@ -136,7 +136,7 @@
   width: 15%;
   position: relative;
 }
-.admin-create-new-projects div:nth-child(3) a, .admin-create-new-customers div:last-child a{
+.admin-create-new-projects div:nth-child(3) #input-admin-create-customer-submit, .admin-create-new-customers div:last-child #input-admin-create-customer-submit{
   position: absolute;
   bottom: 0px;
   background-color: #69e052;
@@ -184,7 +184,7 @@
 .admin-create-new-customers div:first-child{
   width: 70%;
 }
-.admin-create-new-customers div:last-child a{
+.admin-create-new-customers div:last-child #input-admin-create-customer-submit{
   padding: 5px 35px;
   border-radius: 5px;
 }

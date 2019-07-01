@@ -23,3 +23,28 @@ function select_tab(evt, select_tab) {
   document.getElementById(select_tab).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+window.addEventListener("DOMContentLoaded", function() {
+
+  var adminCreateCustomerSubmit = document.getElementById("input-admin-create-customer-submit");
+  adminCreateCustomerSubmit.onclick = function(evt) {
+    evt.preventDefault();
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'phones.json', false);
+    xhr.send();
+    if (xhr.status != 200) {
+      alert(xhr.status + ': ' + xhr.statusText);
+    } else {
+      alert(xhr.responseText);
+    }
+
+
+    /*  var formData = new FormData(document.forms.form-admin-create-new-customers);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/url");
+        xhr.send(formData);*/
+  }
+
+});
