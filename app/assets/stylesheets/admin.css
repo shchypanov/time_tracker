@@ -1,10 +1,9 @@
-
 .wrapper{
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 20px;
 }
-.search-users{
+.search-users, .admin-create-new-customers{
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -15,7 +14,7 @@
   padding: 5px 15px;
   box-sizing: border-box;
 }
-.admin-row-form{
+.admin-row-form, .admin-block-new-project, #admin_search-tabs, .tab-admin, #admin-create-new-customers, .admin-block-new-customer{
   margin-top: 20px;
 }
 .admin-submit{
@@ -28,16 +27,16 @@
 .admin-submit:hover{
   background: #0069d9;
 }
-.user-tasks{
+.user-tasks, .admin-block-new-project, .admin-table-new-project, .admin-block-new-customer, .admin-table-new-customer{
   width: 100%;
 }
-.user-table{
-  max-height: 600px;
+.user-table, .admin-block-new-project, .admin-block-new-customer{
+  max-height: 500px;
   box-sizing: border-box;
   overflow-y: scroll;
   margin-top: 50px;
 }
-.user-tasks thead{
+.user-tasks thead, .admin-table-new-project thead, .admin-table-new-customer thead{
   background-color: #afeeee;
 }
 .user-tasks th{
@@ -50,7 +49,7 @@
 .user-tasks tbody tr:last-child{
   border-bottom: 1px solid #6c757d;
 }
-.user-tasks tbody tr:nth-child(even){
+.user-tasks tbody tr:nth-child(even),.admin-table-new-project tbody tr:nth-child(even), .admin-table-new-customer tbody tr:nth-child(even){
   background-color: #DDDDDD;
 }
 .tab-admin{
@@ -58,14 +57,32 @@
   flex-direction: row;
   list-style: none;
   padding-left: 0px;
+  border-bottom: 2px solid #dee2e6;
 }
-.tab-admin li{
-  margin-right: 10px;
-}
-.tab-admin li button{
+.admin_tablinks{
+  background-color: #fff;
+  border-radius: 5px 5px 0px 0px;
   padding: 5px 20px;
+  border: none;
+  position:relative;
+  bottom: -2px;
+  border: 2px solid #fff;
+  border-bottom: 2px solid #dee2e6;
+  cursor: pointer;
 }
-#tabs2, #tabs3 {
+.admin_tablinks:hover{
+  border: 2px solid #dee2e6;
+  color: #007bff;
+}
+.tab-admin .active{
+  border: 2px solid #dee2e6;
+  border-bottom: 2px solid #fff;
+  color: #007bff;
+}
+.admin_tablinks:focus{
+  outline: none;
+}
+#admin-create-new-project, #admin-create-new-customers {
   display: none;
 }
 .search-users select{
@@ -79,7 +96,7 @@
 .admin-row-form{
   display: block;
 }
-.search-users label{
+.search-users label, .admin-create-new-projects label, .admin-create-new-customers label{
   display: block;
   margin-bottom: 10px;
 }
@@ -92,14 +109,130 @@
 .search-users div:nth-child(3){
   width: 18%;
 }
-.search-users div:nth-child(4){
+.search-users div:nth-child(4), .admin-create-new-projects div:last-child, .admin-create-new-customers div:last-child{
   width: 18%;
   position: relative;
 }
 #admin-search-user,#admin-select-project, .search-users input{
   width: 100%;
-  height: 35px;
+  height: 45px;
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid #ced4da;
+}
+.admin-create-new-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.admin-create-new-projects div:nth-child(1){
+  width: 40%;
+}
+.admin-create-new-projects div:nth-child(2){
+  width: 25%;
+}
+.admin-create-new-projects div:nth-child(3){
+  width: 15%;
+  position: relative;
+}
+.admin-create-new-projects div:nth-child(3) a, .admin-create-new-customers div:last-child a{
+  position: absolute;
+  bottom: 0px;
+  background-color: #69e052;
+  border: none;
+  color: #fff; 
+  text-decoration: none;
+  text-align: center;
+}
+.admin-create-new-projects input, .admin-create-new-projects select, .admin-create-new-projects a, #admin-create-customer{
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+#admin-select-customer{
+  background-color: #fff;
+}
+.admin-table-new-project th:nth-child(1), .admin-table-new-project th:nth-child(2){
+  width: 35%;
+  padding: 5px;
+}
+.admin-table-links a:first-child{
+  background-color: #007bff;
+}
+.admin-table-links a:last-child{
+  background-color: #ff0000c4;
+}
+.admin-table-links a{
+  text-decoration: none;
+  color:#fff;
+  padding: 5px 35px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 49%;
+  border-radius: 5px;
+}
+.admin-create-new-projects div:last-child a{
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+.admin-create-new-customers div:first-child{
+  width: 70%;
+}
+.admin-create-new-customers div:last-child a{
+  padding: 5px 35px;
+  border-radius: 5px;
+}
+.admin-table-new-customer th:first-child{
+  width: 70%;
+}
+.admin-table-new-customer thead th{
+  padding: 5px;
+}
+.registration-container-form h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.registration-container-form .field label{
+  margin: 15px 0px;
+  display: inline-block;
+}
+.registration-container-form .actions input {
+  text-decoration: none;
+  text-align: center;
+  border: solid 1px #9fa4a6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #4e5457;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px #bfb8b8, inset 0px 0px 1px #ffffff;
+  padding: 2px 0;
+  padding: 5px 15px;
+  width: 40.5%;
+  cursor: pointer;
+}
+.registration-container-form .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.registration-container-form .field input{
+  width: 100%;
+}
+.registration-container-form .actions input:hover {
+  color: #fff;
+  background: #343a40;
+  padding: 5px 15px;
+}
+.registration-container-form .actions br{
+  display: none;
 }
