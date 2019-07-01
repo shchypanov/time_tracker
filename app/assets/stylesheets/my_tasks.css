@@ -13,11 +13,6 @@ body {
   height: 100px;
 }
 
-.name-table {
-  background: maroon; /* Цвет фона таблицы */
-
-}
-
 .all-btn {
   flex-direction: row;
   display: flex;
@@ -33,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .table-task {
@@ -46,9 +40,8 @@ body {
 }
 
 .table-task th {
-  background:  #afeeee;
+  background: #afeeee;
   color: white;
-  text-shadow: 0 1px 1px #2d2020;
   padding: 10px 20px;
 }
 
@@ -62,27 +55,6 @@ body {
   text-align: left;
 }
 
-.table-task th:first-child {
-  border-top-left-radius: 10px;
-}
-
-.table-task th:last-child {
-  border-top-right-radius: 10px;
-}
-
-.table-task td {
-  padding: 10px 20px;
-  background: #a5a9cc;
-}
-
-.table-task tr:last-child td:first-child {
-  border-radius: 0 0 0 10px;
-}
-
-.table-task tr:last-child td:last-child {
-  border-radius: 0 0 10px 0;
-}
-
 section {
   margin: 10px 1.5% 50px 10px;
   padding: 30px;
@@ -90,4 +62,8 @@ section {
 
 .task {
   text-align: center;
+}
+
+.grey {
+  background-color: #d9d9d9;
 }
