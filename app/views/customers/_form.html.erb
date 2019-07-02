@@ -1,9 +1,9 @@
 <%= form_for(@customer, remote: true, html: {'class':"admin-create-new-customers", 'id': "form-admin-create-new-customers"}) do |form| %>
 <div class="field">
   <%= form.label :User, 'for' => "admin-create-customer" %>
-  <%= form.text_field :name, 'placeholder' => "Write customer ..." %>
+  <%= form.text_field :name, 'placeholder' => "Write customer ...", 'class' => "admin-create-customer" %>
 </div>
 <div class="actions">
-  <%= form.submit "Add customer", 'id' => "input-admin-create-customer-submit", 'name' => "admin-create-customer-submit", 'type' => "submit", 'value' => "Add customer" %>
+  <%= form.submit "Add customer", 'class' => "input-admin-create-customer-submit", 'name' => "admin-create-customer-submit", 'type' => "submit", 'value' => "Add customer" %>
 </div>
 <% end %>

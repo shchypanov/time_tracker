@@ -26,27 +26,14 @@ function select_tab(evt, select_tab) {
 
 window.addEventListener("DOMContentLoaded", function() {
 
-// var form = document.getElementById("form-admin-create-new-customers");
-//   document.getElementById("input-admin-create-customer-submit").addEventListener("click", function() {
-//     form.submit();
-//     console.log(form);
-//   });
+  var customerSubmit = document.getElementsByClassName("input-admin-create-customer-submit")[0];
+  customerSubmit.onclick = function validate_form(evt) {
+    var customerInput = document.getElementsByClassName("admin-create-customer")[0];
+    if (customerInput.value == '') {
+      evt.preventDefault();
+      alert("Please fill in the customer field.");
+      return false;
+    }
+  }
 
-/*
-  var adminCreateCustomerSubmit = document.getElementById("input-admin-create-customer-submit");
-  adminCreateCustomerSubmit.onclick = function(evt) {
-    evt.preventDefault();
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'phones.json', false);
-    xhr.send();
-    if (xhr.status != 200) {
-      alert(xhr.status + ': ' + xhr.statusText);
-    } else {
-      alert(xhr.responseText);
-    }*/
-    /*  var formData = new FormData(document.forms.form-admin-create-new-customers);
-
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/url");
-        xhr.send(formData);*/
-  });
+});

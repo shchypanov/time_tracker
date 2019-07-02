@@ -1,1 +1,12 @@
-console.log("<%= @customer.name %>")
+var nameCustomer = "<%= @customer.name %>";
+var tableRow = document.querySelector('.admin-block-new-customer .admin-table-new-customer tbody');
+var newCustomer = document.createElement('tr');
+newCustomer.innerHTML = ('<tr>' +
+  '<th>' + nameCustomer + '</th>' +
+  '<th class="admin-table-links">' +
+  '<a href="#">Edit</a>' +
+  '<a href="#">Delete</a>' +
+  '</th>' +
+  '</tr>'
+);
+tableRow.appendChild(newCustomer);

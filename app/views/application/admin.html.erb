@@ -105,19 +105,7 @@
     </div>
   </div>
   <div id="admin-create-new-customers" class="admin_tabcontent">
-
-
-
     <%= render 'customers/form'%>
-<!--     <form class="admin-create-new-customers" id="form-admin-create-new-customers">
-      <div>
-        <label for="admin-create-customer">User:</label>
-        <input id="admin-create-customer" placeholder="Write customer ..." type="text" name="admin-create-customer" required form="form-admin-create-new-customers">
-      </div>
-      <div>
-        <input type="submit" name="admin-create-customer-submit" id="input-admin-create-customer-submit" value="Add customer" form="form-admin-create-new-customers">
-      </div>
-    </form> -->
     <div class="admin-block-new-customer">
       <table class="admin-table-new-customer">
         <thead>
@@ -129,7 +117,7 @@
         <tbody>
           <% for i in 0..100 do %>
           <tr>
-            <th>Customer</th>
+            <th id="customer_id">Customer</th>
             <th class="admin-table-links">
               <a href="#">Edit</a>
               <a href="#">Delete</a>

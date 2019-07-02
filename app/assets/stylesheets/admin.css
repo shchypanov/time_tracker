@@ -190,8 +190,8 @@
   position: relative;
 }
 
-.admin-create-new-projects div:nth-child(3) #input-admin-create-customer-submit,
-.admin-create-new-customers div:last-child #input-admin-create-customer-submit {
+.admin-create-new-projects .input-admin-create-customer-submit,
+.admin-create-new-customers .input-admin-create-customer-submit {
   position: absolute;
   bottom: 0px;
   background-color: #69e052;
@@ -204,7 +204,7 @@
 .admin-create-new-projects input,
 .admin-create-new-projects select,
 .admin-create-new-projects a,
-#admin-create-customer {
+.admin-create-customer {
   width: 100%;
   height: 40px;
   box-sizing: border-box;
@@ -252,7 +252,7 @@
   width: 70%;
 }
 
-.admin-create-new-customers div:last-child #input-admin-create-customer-submit {
+.admin-create-new-customers .input-admin-create-customer-submit {
   padding: 5px 35px;
   border-radius: 5px;
 }
