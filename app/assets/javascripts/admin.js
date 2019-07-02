@@ -26,11 +26,11 @@ function select_tab(evt, select_tab) {
 
 window.addEventListener("DOMContentLoaded", function() {
 
-var form = document.getElementById("form-admin-create-new-customers");
-  document.getElementById("input-admin-create-customer-submit").addEventListener("click", function() {
-    form.submit();
-    console.log(form);
-  });
+// var form = document.getElementById("form-admin-create-new-customers");
+//   document.getElementById("input-admin-create-customer-submit").addEventListener("click", function() {
+//     form.submit();
+//     console.log(form);
+//   });
 
 /*
   var adminCreateCustomerSubmit = document.getElementById("input-admin-create-customer-submit");
