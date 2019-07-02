@@ -16,12 +16,18 @@ body {
 .all-btn {
   flex-direction: row;
   display: flex;
-  max-width: 1200px;
-  margin: 0;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.field_input input {
-  width: 1600px;
+
+.btn-search {
+  background: #5249fc;
+  border: 2px solid #eee;
+  height: 41px;
+  width: 115px;
+  display: block;
+  border-radius: 10px;
 }
 
 .all-table {

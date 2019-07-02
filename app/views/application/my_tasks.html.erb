@@ -2,23 +2,25 @@
 
 <section>
   <div class="all-btn">
-    <label for="admin-select-project">Select project:</label>
-    <select>
-      <option>Project 1</option>
-      <option>Project 2</option>
-      <option>Project 3</option>
-      <option>Project 4</option>
-      <option>Project 5</option>
-    </select>
     <div>
-      <label for="admin-search-date">Search date:</label>
-      <input id="admin-search-date" class="admin-search-date" type="date">
+      <label for="select-project">Select project:</label>
+      <select id="select-project">
+        <option value="Project">Project1</option>
+        <option value="Project">Project2</option>
+        <option value="Project">Project3</option>
+        <option value="Project">Project4</option>
+      </select>
     </div>
-  </div>
-  <div class="field_input">
-    <input name="s" placeholder="Search here..." type="search">
-    <button type="submit">Search</button>
-  </div>
+    <div class="search">
+      <label for="search-date">Search date:</label>
+      <input id="admin-search-date" class="search-date" type="date">
+    </div>
+    <div  class="search">
+      <label for="search-user">Name user:</label>
+      <input id="search-user" type="text" name="" placeholder="Search user ...">
+    </div>
+      <p><input type="button" class="btn-search" value="Search"></p>
+    </div>
 </section>
 <section>
   <div class="all-table">
@@ -28,35 +30,29 @@
           <p class="task">My Tasks</p>
         </th>
       </tr>
-
       <tr class="name-table">
         <td>Project</td>
         <td>Task</td>
         <td>Start/Finish</td>
         <td>Full Time</td>
-
       </tr>
-
       <tr>
         <td class="grey">project 1</td>
-        <td  class="grey">task1</td>
-        <td   class="grey">1:00/3:00</td>
-        <td   class="grey">2:00</td>
-
+        <td class="grey">task1</td>
+        <td class="grey">1:00/3:00</td>
+        <td class="grey">2:00</td>
       </tr>
       <tr>
         <td>project 2</td>
         <td>task2</td>
         <td>1:00/3:00</td>
         <td>2:00</td>
-
       </tr>
       <tr>
-        <td>project 3</td>
-        <td>task3</td>
-        <td>1:00/3:00</td>
-        <td>2:00</td>
-
+        <td class="grey">project 3</td>
+        <td class="grey">task3</td>
+        <td class="grey">1:00/3:00</td>
+        <td class="grey">2:00</td>
       </tr>
     </table>
   </div>
