@@ -1,10 +1,10 @@
 <%= form_for(@customer, remote: true, html: {'data-type': 'json', 'class':"admin-create-new-customers", 'id': "form-admin-create-new-customers"}) do |form| %>
 <div class="field">
-  <%= form.label :User, html: { 'for': "admin-create-customer"} %>
-  <%= form.text_field :name, html: {id: "admin-create-customer", form: "form-admin-create-new-customers", name: "admin-create-customer"} %>
+  <%= form.label :User, 'for' => "admin-create-customer" %>
+  <%= form.text_field :name, 'id' => "admin-create-customer", 'name' => "admin-create-customer", 'placeholder' => "Write customer ..." %>
 </div>
 <div class="actions">
-  <%= form.submit "Add customer", html: {id:"input-admin-create-customer-submit", name: "admin-create-customer-submit", form: "form-admin-create-new-customers"} %>
+  <%= form.submit "Add customer", 'id' => "input-admin-create-customer-submit", 'name' => "admin-create-customer-submit", 'type' => "submit", 'value' => "Add customer" %>
 </div>
 <!--   <div>
   <label for="admin-create-customer">User:</label>
