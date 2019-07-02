@@ -20,14 +20,14 @@ body {
   justify-content: space-between;
 }
 
-
 .btn-search {
-  background: #5249fc;
+  background: #1671cc;
   border: 2px solid #eee;
   height: 41px;
   width: 115px;
   display: block;
   border-radius: 10px;
+  color: #fff;
 }
 
 .all-table {
