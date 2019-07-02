@@ -16,10 +16,11 @@ body {
 .body-task {
   margin: 10%;
   padding: 10px;
+  display: block;
 }
 
-input, label{
-    display:block;
+input, label {
+  display: block;
 }
 
 .all-btn {
@@ -31,18 +32,19 @@ input, label{
 
 .btn-search {
   background: #1671cc;
-  border: 2px solid #eee;
-  height: 41px;
+  height: 45px;
   width: 115px;
   display: block;
   border-radius: 10px;
   color: #fff;
+  margin-top: 26px;
 }
 
 .all-table {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .table-task {
