@@ -26,6 +26,13 @@ function select_tab(evt, select_tab) {
 
 window.addEventListener("DOMContentLoaded", function() {
 
+var form = document.getElementById("form-admin-create-new-customers");
+  document.getElementById("input-admin-create-customer-submit").addEventListener("click", function() {
+    form.submit();
+    console.log(form);
+  });
+
+/*
   var adminCreateCustomerSubmit = document.getElementById("input-admin-create-customer-submit");
   adminCreateCustomerSubmit.onclick = function(evt) {
     evt.preventDefault();
@@ -36,14 +43,10 @@ window.addEventListener("DOMContentLoaded", function() {
       alert(xhr.status + ': ' + xhr.statusText);
     } else {
       alert(xhr.responseText);
-    }
-
-
+    }*/
     /*  var formData = new FormData(document.forms.form-admin-create-new-customers);
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "/url");
         xhr.send(formData);*/
-  }
-
-});
+  });
