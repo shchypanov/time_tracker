@@ -7,30 +7,43 @@
   display: flex;
   flex-wrap: wrap;
   color: fff;
-  width: 200px;
   list-style: none;
 }
 
-.top-menu__item a {
-  text-decoration: none;
-  margin: 10px;
+.top-menu__item {
+  margin: 0px 0px 0px 30px;
 }
-
+.top-menu__item a{
+  text-decoration: none;
+  color: #551A8B;
+  font-weight: 600;
+}
+header{
+  background-color: #afeeee;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #afeeee;
   margin: 0;
   padding: 0;
   height: 100px;
 }
-
-.logo img {
-  width: 50px;
-  height: 50px;
+.top-menu__item a:hover{
+  border-bottom: 2px solid #551A8B;
+  padding-bottom: 3px;
 }
-
+.logo img {
+  height: 75px;
+}
+.log_out_link a{
+  border-bottom: 2px solid #551A8B;
+  padding-bottom: 3px;
+  color:#551A8B;
+}
+.log_out_link a:hover{
+  border-bottom: none;
+}
 .profile_button {
   color: #fff;
   border-color: #007bff;
@@ -132,4 +145,96 @@ select option.profile_select-client__option {
 
 .profile_table tbody tr:nth-child(even) {
   background-color: #eae9e9;
+}
+.close_mobile_button, .close_mobile_button > *, #sandwich_open{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+.top-menu{
+  position: fixed;
+  flex-direction: column;
+  right: 0px;
+  top: 0px;
+  width: 40%;
+  background-color: #CECECE;
+  height: 100%;
+  padding-left: 0px;
+  margin-right: -100%;
+  transition: 0.5s;
+}
+.top-menu__item a{
+  color: #818181;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.top-menu__item{
+  margin-top: 10px;
+}
+.close_mobile_button{
+  display: block;
+  margin-bottom: 10px;
+}
+.close_mobile_button div{
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #818181;
+  margin: 20px  0px ;
+  transform: rotate(45deg);
+  position: relative;
+  cursor: pointer;
+}
+.close_mobile_button div:before{
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 30px;
+  content:''; 
+  transform: rotate(-90deg);
+  background-color: #818181;
+}
+.log_out_link a{
+  border-bottom: none;
+}
+.log_out_link a:hover{
+  border-bottom: 2px solid #551A8B;
+}
+.top-menu__item a:hover{
+  color: #551A8B;
+}
+#sandwich_open{
+  display: block;
+  height: 4px;
+  width: 40px;
+  background-color: #551A8B;
+  border: none;
+  position: relative;
+}
+#sandwich_open:after, #sandwich_open:before{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 40px;
+  background-color: #551A8B;
+  top: 10px;
+  left: -50%;
+  transform: translateX(50%);
+}
+#sandwich_open:before{
+  top: -10px;
+}
+#overlay{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background:rgba(0, 0, 0, 0.8);
+  display:none;
+}
+#sandwich_open:focus{
+  outline: none;
+}
+.mystyle{
+  overflow-y: hidden;
+}
 }
