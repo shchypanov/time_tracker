@@ -162,6 +162,7 @@ select option.profile_select-client__option {
   padding-left: 0px;
   margin-right: -100%;
   transition: 0.5s;
+  display: none;
 }
 .top-menu__item a{
   color: #818181;
@@ -226,7 +227,7 @@ select option.profile_select-client__option {
 }
 #overlay{
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background:rgba(0, 0, 0, 0.8);
   display:none;
