@@ -115,9 +115,9 @@
           </tr>
         </thead>
         <tbody>
-          <% for i in 0..100 do %>
+          <% @customers.each do |customer| %>
           <tr>
-            <th id="customer_id">Customer</th>
+            <th id="customer_id"> <%= customer.name =%> </th>
             <th class="admin-table-links">
               <a href="#">Edit</a>
               <a href="#">Delete</a>

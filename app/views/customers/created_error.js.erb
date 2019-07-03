@@ -1,1 +1,11 @@
-alert("Error"); 
+document.getElementsByClassName("input-admin-create-customer-submit")[0].onclick = function() {
+  var nameCustomer = "<%= @customer.name %>";
+  var customerInput = document.getElementsByClassName("admin-create-customer")[0];
+  console.log(nameCustomer);
+  customerInput.value = "";
+  customerInput.className = "customer-input-error";
+  customerInput.innerHTML = "ERROR";
+
+  alert("Error");
+  console.log(nameCustomer);
+}

@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   def admin
   	@customer = Customer.new
   	@project = Project.new
+    @customers = Customer.all
   end
 
   private
