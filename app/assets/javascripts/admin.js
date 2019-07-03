@@ -1,15 +1,3 @@
-// window.onresize = function (even) {
-//   var table = document.getElementById('user-table');
-//   if( window.innerHeight >= 900 ){
-//     table.style.height="600px"
-//   }
-//   if( window.innerHeight <= 900 ){
-//     table.style.height="400px"
-//   }
-//   if( window.innerHeight <= 700 ){
-//     table.style.height="300px"
-//   }
-// }
 function select_tab(evt, select_tab) {
   var i, admin_tabcontent, admin_tablinks;
   admin_tabcontent = document.getElementsByClassName("admin_tabcontent");
@@ -22,4 +10,7 @@ function select_tab(evt, select_tab) {
   }
   document.getElementById(select_tab).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
+
+
+

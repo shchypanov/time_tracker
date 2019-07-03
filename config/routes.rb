@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   resources :customers
   resources :projects
   resources :tasks
-#jhbj
-  get '/tasks/stop', to 'tasks#stop'
 
   get '/profile', to: 'application#profile'
   get '/admin', to: 'application#admin'
