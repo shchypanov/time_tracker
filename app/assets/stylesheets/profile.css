@@ -149,20 +149,25 @@ select option.profile_select-client__option {
 .close_mobile_button, .close_mobile_button > *, #sandwich_open{
   display: none;
 }
-
+@media screen and (max-width: 750px) {
+  .top-menu li a{
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 600px) {
 .top-menu{
   position: fixed;
   flex-direction: column;
   right: 0px;
   top: 0px;
-  width: 40%;
+  width: 50%;
   background-color: #CECECE;
   height: 100%;
   padding-left: 0px;
   margin-right: -100%;
   transition: 0.5s;
   display: none;
+  z-index: 2;
 }
 .top-menu__item a{
   color: #818181;
@@ -231,11 +236,20 @@ select option.profile_select-client__option {
   width: 100%;
   background:rgba(0, 0, 0, 0.8);
   display:none;
+  z-index: 1;
 }
 #sandwich_open:focus{
   outline: none;
 }
 .mystyle{
   overflow-y: hidden;
+}
+}
+@media screen and (max-width: 465px) {
+.logo img {
+    height: 60px;
+}
+.header {
+  height: 70px;
 }
 }
