@@ -6,13 +6,8 @@ class ApplicationController < ActionController::Base
   def admin
   	@customer = Customer.new
   	@project = Project.new
-    @customers = Customer.all
- 
-     #  if @customer.name.empty?
-     # format.js {render :created}
-     # else
-     #   format.js {render :created_error}
-    #  end
+    @customers = Customers.all
+    @project = Project.all 
 
   end
 
