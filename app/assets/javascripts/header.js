@@ -10,12 +10,14 @@ window.addEventListener('DOMContentLoaded', function(){
 
   function OpenMenuFunction(event){
     mobileMenu.style.marginRight = "0%";
+    mobileMenu.style.display = "flex";
     offMenuOnFocus.style.display = "block";
     document.body.classList.toggle("mystyle");
   };
 
   function  closeMenuFunction (event){
     mobileMenu.style.marginRight = "-100%";
+    mobileMenu.style.display = "none";
     offMenuOnFocus.style.display = "none";
   };
- });
+});
