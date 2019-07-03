@@ -17,26 +17,27 @@
 .admin-row-form, .admin-block-new-project, #admin_search-tabs, .tab-admin, #admin-create-new-customers, .admin-block-new-customer{
   margin-top: 20px;
 }
-.admin-submit{
+.admin-submit, .admin-submit-company{
   position: absolute;
   bottom: 0px;
   background:#007bff;
   color: #fff;
   border:none;
+  cursor: pointer;
 }
-.admin-submit:hover{
+.admin-submit:hover, .admin-submit-company:hover{
   background: #0069d9;
 }
-.user-tasks, .admin-block-new-project, .admin-table-new-project, .admin-block-new-customer, .admin-table-new-customer{
+.user-tasks, .admin-block-new-project, .admin-table-new-project, .admin-block-new-customer, .admin-table-new-customer, .admin-block-info-company, .admin-table-info-company{
   width: 100%;
 }
-.user-table, .admin-block-new-project, .admin-block-new-customer{
+.user-table, .admin-block-new-project, .admin-block-new-customer, .admin-block-info-company{
   max-height: 500px;
   box-sizing: border-box;
   overflow-y: scroll;
   margin-top: 50px;
 }
-.user-tasks thead, .admin-table-new-project thead, .admin-table-new-customer thead{
+.user-tasks thead, .admin-table-new-project thead, .admin-table-new-customer thead, .admin-table-info-company thead{
   background-color: #afeeee;
 }
 .user-tasks th{
@@ -49,7 +50,7 @@
 .user-tasks tbody tr:last-child{
   border-bottom: 1px solid #6c757d;
 }
-.user-tasks tbody tr:nth-child(even),.admin-table-new-project tbody tr:nth-child(even), .admin-table-new-customer tbody tr:nth-child(even){
+.user-tasks tbody tr:nth-child(even),.admin-table-new-project tbody tr:nth-child(even), .admin-table-new-customer tbody tr:nth-child(even), .admin-table-info-company tbody tr:nth-child(even){
   background-color: #DDDDDD;
 }
 .tab-admin{
@@ -82,7 +83,7 @@
 .admin_tablinks:focus{
   outline: none;
 }
-#admin-create-new-project, #admin-create-new-customers {
+#admin-create-new-project, #admin-create-new-customers, #admin-create-new-company {
   display: none;
 }
 .search-users select{
@@ -191,7 +192,7 @@
 .admin-table-new-customer th:first-child{
   width: 70%;
 }
-.admin-table-new-customer thead th{
+.admin-table-new-customer thead th, .admin-table-info-company thead th{
   padding: 5px;
 }
 .registration-container-form h2{
@@ -235,4 +236,10 @@
 }
 .registration-container-form .actions br{
   display: none;
+}
+.admin-table-info-company tbody th:nth-child(1){
+  width: 40%;
+}
+.admin-table-info-company tbody th:nth-child(2){
+  width: 30%;
 }
