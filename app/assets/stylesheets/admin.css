@@ -315,7 +315,12 @@
 }
 
 .customer-input-error {
-    box-shadow: 0 0 0 0.15rem rgba(227, 0, 0, 0.75);
-    border-radius: 4px;
-    border-color: #ced4da;
+  box-shadow: 0 0 0 0.15rem rgba(227, 0, 0, 0.75);
+  border-radius: 4px;
+  border-color: #ced4da;
+}
+
+.customer-input-text-error {
+  margin-top: 10px;
+  color: #7c7f82;
 }

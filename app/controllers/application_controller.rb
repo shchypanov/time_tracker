@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
   	@customer = Customer.new
   	@project = Project.new
     @customers = Customer.all
+ 
+     #  if @customer.name.empty?
+     # format.js {render :created}
+     # else
+     #   format.js {render :created_error}
+    #  end
+
   end
 
   private

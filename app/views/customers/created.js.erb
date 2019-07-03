@@ -1,6 +1,9 @@
 var nameCustomer = "<%= @customer.name %>";
 var tableRow = document.querySelector('.admin-block-new-customer .admin-table-new-customer tbody');
 var newCustomer = document.createElement('tr');
+var customerInputTextError = document.getElementsByClassName("customer-input-text-error")[0];
+var customerInput = document.getElementsByClassName("customer-third-class")[0];
+
 
 newCustomer.innerHTML = ('<tr>' +
   '<th>' + nameCustomer + '</th>' +
@@ -11,3 +14,7 @@ newCustomer.innerHTML = ('<tr>' +
   '</tr>'
 );
 tableRow.appendChild(newCustomer);
+
+customerInputTextError.style.display = "none";
+/*customerInput.value = "";*/
+customerInput.className = "customer-third-class admin-create-customer";
