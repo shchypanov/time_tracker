@@ -5,11 +5,12 @@ class ProjectsController < ApplicationController
     end
 
     def create
-    project = Project.new(project_params)
-    if project.save
-      render json: {}, status: 200
-    else
-      render json: {message: "Error"}, status: 422
+      debugger
+    @project = Project.new(project_params)
+    if @project.name.present? && @project.save
+        format.js {render :created}
+      else
+        format.js {render :created_error}
     end
   end
 

@@ -1,13 +1,14 @@
+<%= form_for(@project, remote: true, html: {'class': "admin-create-new-projects"}) do |form| %>
 <div class="field">
+  <%= form.label :Project, 'for' => "admin-create-user" %>
+  <%= form.text_field :name, 'class' => "admin-create-user-text project-third-class", 'placeholder' => "Write user ...", 'type' => "text" %>
+  .
+  <%= form.select( :customer_id, options_for_select(Customer.all.map{|c| [c.name, c.id ]}))%>
+
 
 </div>
-<%= form_for(@project, remote: true, html: {'data-type': 'json'}) do |form| %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="actions">
+  <%= form.submit "Add project", 'class'=> "admin-create-user-submit", 'type' => "submit", 'value' => "Add project" %>
+</div>
 <% end %>
+<p class="customer-input-text-error">Error, please enter again!</p>

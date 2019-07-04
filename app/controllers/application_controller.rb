@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   	@customer = Customer.new
   	@project = Project.new
     @customers = Customer.all
-
+    @projects = Project.all
   end
 
   private
