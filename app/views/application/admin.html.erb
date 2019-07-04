@@ -118,7 +118,8 @@
             </th>
             <th class="admin-table-links">
               <a href="#">Edit</a>
-              <a href="#">Delete</a>
+              <!-- <a href="#">Delete</a> -->
+              <%= link_to "Delete", customer, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
             </th>
           </tr>
           <% end %>
