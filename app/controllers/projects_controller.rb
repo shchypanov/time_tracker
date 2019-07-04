@@ -1,15 +1,17 @@
 class ProjectsController < ApplicationController
 
-    def new
-      @project = Project.new
-    end
+  def new
+    @project = Project.new
+  end
 
-    def create
+  def create
     @project = Project.new(project_params)
-    if @project.name.present? && @project.save
-        format.js {render :created}
-      else
-        format.js {render :created_error}
+    respond_to do |format| 
+      if @project.name.present? && @project.save
+          format.js {render :created}
+        else
+          format.js {render :created_error}
+      end
     end
   end
 

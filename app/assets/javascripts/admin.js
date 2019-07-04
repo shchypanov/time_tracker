@@ -26,13 +26,24 @@ function select_tab(evt, select_tab) {
 
 window.addEventListener("DOMContentLoaded", function() {
 
-  var customerSubmit = document.getElementsByClassName("input-admin-create-customer-submit")[0];
-  customerSubmit.onclick = function validate_form(evt) {
-    var customerInput = document.getElementsByClassName("admin-create-customer")[0];
-    if (customerInput.value == '') {
-      evt.preventDefault();
-      alert("Please fill in the customer field.");
-      return false;
-    }
-  }
-});
+      var customerSubmit = document.getElementsByClassName("input-admin-create-customer-submit")[0];
+      customerSubmit.onclick = function validate_form_customer(evt) {
+        var customerInput = document.getElementsByClassName("admin-create-customer")[0];
+        if (customerInput.value == '') {
+          evt.preventDefault();
+          alert("Please fill in the customer field.");
+          return false;
+        }
+      }
+
+/*       var projectSubmit = document.getElementsByClassName("admin-create-user-submit")[0];
+        projectSubmit.onclick = function validate_form_project(evt) {
+          var projectInput = document.getElementsByClassName("admin-create-user-text")[0];
+          if (projectInput.value == '') {
+            console.log(projectInput);
+            evt.preventDefault();
+            alert("Please fill in the customer field.");
+            return false;
+          }
+        }*/
+    });
