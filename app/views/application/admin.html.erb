@@ -62,24 +62,6 @@
     </div>
   </div>
   <div id="admin-create-new-project" class="admin_tabcontent">
-    <form class="admin-create-new-projects">
-      <div>
-        <label for="admin-create-user">User:</label>
-        <input class="admin-create-user-text" placeholder="Write user ..." type="text" name="admin-create-user">
-      </div>
-      <div>
-        <label for="admin-select-customer">Select customer:</label>
-        <select class="admin-select-customer">
-          <option value="Project">customer 1</option>
-          <option value="Project">customer 2</option>
-          <option value="Project">customer 3</option>
-          <option value="Project">customer 4</option>
-        </select>
-      </div>
-      <div>
-        <input class="admin-create-user-submit" type="submit" value="Add project">
-      </div>
-    </form>
     <%= render 'projects/form'%>
     <div class="admin-block-new-project">
       <table class="admin-table-new-project">

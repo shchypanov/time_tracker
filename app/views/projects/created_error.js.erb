@@ -1,0 +1,6 @@
+document.getElementsByClassName("admin-create-user-submit")[0].onclick = function() {
+  var projectInput = document.getElementsByClassName("admin-create-user-text")[0];
+  var projectInputTextError = document.getElementsByClassName("customer-input-text-error")[0];
+  projectInput.className = "admin-create-user-text customer-input-error project-third-class";
+  projectInputTextError.style.display = "block";
+}

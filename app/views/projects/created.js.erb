@@ -1,0 +1,20 @@
+var nameProject = "<%= @project.name %>";
+var tableRow = document.querySelector('.admin-block-new-project .admin-table-new-project tbody');
+var newProject = document.createElement('tr');
+var projectInputTextError = document.getElementsByClassName("customer-input-text-error")[0];
+var projectInput = document.getElementsByClassName("admin-create-user-text")[0];
+
+newProject.innerHTML = ('<tr>' +
+  '<th>' + nameProject + '</th>' +
+  ' <th>Customer</th>' +
+  '<th class="admin-table-links">' +
+  '<a href="#">Edit</a>' +
+  '<a href="#">Delete</a>' +
+  '</th>' +
+  '</tr>'
+);
+tableRow.appendChild(newProject);
+
+projectInputTextError.style.display = "none";
+projectInput.value = "";
+projectInput.className = "project-third-class admin-create-customer";

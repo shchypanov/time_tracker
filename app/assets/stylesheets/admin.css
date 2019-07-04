@@ -156,7 +156,7 @@
 .search-users div:nth-child(4),
 .admin-create-new-projects div:last-child,
 .admin-create-new-customers div:last-child {
-  width: 18%;
+  width: 20%;
   position: relative;
 }
 
@@ -186,7 +186,7 @@
 }
 
 .admin-create-new-projects div:nth-child(3) {
-  width: 15%;
+  width: 35%;
   position: relative;
 }
 

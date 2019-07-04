@@ -1,6 +1,6 @@
 <%= form_for(@project, remote: true, html: {'class': "admin-create-new-projects"}) do |form| %>
 <div class="field">
-  <%= form.label :Project, 'for' => "admin-create-user" %>
+  <%= form.label :'Project:', 'for' => "admin-create-user" %>
   <%= form.text_field :name, 'class' => "admin-create-user-text project-third-class", 'placeholder' => "Write user ...", 'type' => "text" %>
 </div>
 <div class="project-select">
