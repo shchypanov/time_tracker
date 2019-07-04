@@ -10,7 +10,4 @@ function select_tab(evt, select_tab) {
   }
   document.getElementById(select_tab).style.display = "block";
   evt.currentTarget.className += " active";
-};
-
-
-
+}
