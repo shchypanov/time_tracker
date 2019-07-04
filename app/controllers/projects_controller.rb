@@ -5,7 +5,6 @@ class ProjectsController < ApplicationController
     end
 
     def create
-      debugger
     @project = Project.new(project_params)
     if @project.name.present? && @project.save
         format.js {render :created}

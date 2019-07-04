@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   	@project = Project.new
     @customers = Customer.all
     @projects = Project.all
+    @cust = Customer.all.map{|c| [c.name, c.id ]}
   end
 
   private

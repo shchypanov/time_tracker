@@ -2,10 +2,10 @@
 <div class="field">
   <%= form.label :Project, 'for' => "admin-create-user" %>
   <%= form.text_field :name, 'class' => "admin-create-user-text project-third-class", 'placeholder' => "Write user ...", 'type' => "text" %>
-  .
-  <%= form.select( :customer_id, options_for_select(Customer.all.map{|c| [c.name, c.id ]}))%>
-
-
+</div>
+<div class="project-select">
+  <%= form.label :'Select customer:' %>
+  <%= form.select(:customer_id, options_for_select( @cust ), {}, { class: 'admin-select-customer'}) %>
 </div>
 <div class="actions">
   <%= form.submit "Add project", 'class'=> "admin-create-user-submit", 'type' => "submit", 'value' => "Add project" %>
