@@ -354,5 +354,7 @@
 }
 
 .project-window-edit:tarh {
-
+  display: block;
+  pointer-events: auto;
+  
 }

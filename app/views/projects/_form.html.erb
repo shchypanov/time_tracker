@@ -5,7 +5,7 @@
 </div>
 <div class="project-select">
   <%= form.label :customer_id %>
-  <%= form.select(:customer_id, options_for_select(@customer_for_select), {}, { class: 'admin-select-customer'}) %>
+  <%= form.select(:customer_id, options_for_select( @customer_for_select ), {}, { class: 'admin-select-customer'}) %>
 </div>
 <div class="actions">
   <%= form.submit "Add project", class: "admin-create-user-submit", type: "submit" %>
