@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   before_action :user_admin, only: :admin
 
   def admin
+      @project = Project.new
+      @customer = Customer.new
   end
 
   private

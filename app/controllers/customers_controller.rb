@@ -3,11 +3,13 @@ class CustomersController < ApplicationController
   def create
     customer = Customer.new(customer_params)
     if customer.save
-      render json: {}, status: 200
+      render json: {message: "Customer saved"}, status: 200
     else
       render json: {message: "Error"}, status: 422
     end
   end
+
+
 
   private
 
