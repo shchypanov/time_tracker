@@ -2,6 +2,10 @@
 
 <div class="body-task">
   <div class="all-btn">
+    <div class="search">
+      <label for="search-user" class="superlabel">User name:</label>
+      <input id="search-user" type="text" name="" placeholder="Search user ...">
+    </div>
     <div>
       <label for="select-project">Select project:</label>
       <select id="select-project">
@@ -12,41 +16,29 @@
       </select>
     </div>
     <div class="search-data">
-      <label for="search-data">Data:</label>
-      <input id="admin-search-date" class="search-date" type="date">
-    </div>
-    <div class="search">
-      <label for="search-user">User name:</label>
-      <input id="search-user" type="text" name="" placeholder="Search user ...">
+      <label for="search-data" class="superlabel">Data:</label>
+      <input id="search-date" class="search-date" type="date">
     </div>
     <p><input type="button" class="btn-search" value="Search"></p>
   </div>
+
   <div class="all-table">
     <table class="table-task">
       <tr class="name-table">
-        <td>Project</td>
-        <td>Task</td>
-        <td>Start/Finish</td>
-        <td>Full Time</td>
+        <th>Project</th>
+        <th>Task</th>
+        <th>Start/Finish</th>
+        <th>Full Time</th>
       </tr>
+      <% for i in 0..100 do %>
       <tr>
-        <td class="grey">project 1</td>
-        <td class="grey">task1</td>
-        <td class="grey">1:00/3:00</td>
-        <td class="grey">2:00</td>
-      </tr>
-      <tr>
-        <td>project 2</td>
-        <td>task2</td>
+        <td>project 1</td>
+        <td>task1</td>
         <td>1:00/3:00</td>
         <td>2:00</td>
       </tr>
-      <tr>
-        <td>project 3</td>
-        <td>task3</td>
-        <td>1:00/3:00</td>
-        <td>2:00</td>
-      </tr>
+      <% end %>
     </table>
   </div>
+</div>
 </div>

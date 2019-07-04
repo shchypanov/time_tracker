@@ -1,25 +1,10 @@
-body {
-  margin: 0;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #afeeee;
-  width: 1900px;
-  margin: 0;
-  padding: 0;
-  height: 100px;
-}
-
 .body-task {
-  margin: 10%;
+  margin: 0 18%;
   padding: 10px;
   display: block;
 }
 
-input, label {
+input, .superlabel {
   display: block;
 }
 
@@ -30,6 +15,30 @@ input, label {
   justify-content: space-between;
 }
 
+#search-user {
+  width: 100%;
+  height: 33px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#select-project {
+  background-color: #fff;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
+#search-date {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
 .btn-search {
   background: #1671cc;
   height: 45px;
@@ -38,13 +47,20 @@ input, label {
   border-radius: 10px;
   color: #fff;
   margin-top: 26px;
+  border: none;
 }
 
 .all-table {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 70px;
+  overflow-y:scroll;
+  height:550px;
+  display:block;
+}
+
+.name-table {
+  background-color: #d9d9d9;
 }
 
 .table-task {
@@ -69,7 +85,8 @@ input, label {
 }
 
 .table-task th:first-child, td:first-child {
-  text-align: left;
+  text-align: center;
+  padding: 5px;
 }
 
 .task {
