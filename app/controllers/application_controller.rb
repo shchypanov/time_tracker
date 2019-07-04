@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   	@project = Project.new
     @customers = Customer.all
     @projects = Project.all
-    @cust = Customer.all.map{|c| [c.name, c.id ]}
+    @customer_for_select = Customer.all.map{|c| [c.name, c.id ]}
   end
 
   private
@@ -17,3 +17,4 @@ class ApplicationController < ActionController::Base
     redirect_to root_path unless current_user.admin?
   end
 end
+ 

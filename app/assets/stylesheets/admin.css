@@ -227,7 +227,7 @@
   background-color: #007bff;
 }
 
-.admin-table-links a:last-child {
+.admin-table-links a {
   background-color: #ff0000c4;
 }
 
@@ -325,7 +325,34 @@
   display: none;
   color: #7c7f82;
 }
+
 .admin-create-user-submit {
   margin-top: 38px;
+}
+
+.project-window-edit {
+  display: inline;
+}
+
+.project-window-delete {
+  display: inline;
+}
+
+.project-window-edit {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+}
+
+.project-window-edit:tarh {
 
 }

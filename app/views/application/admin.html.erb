@@ -82,8 +82,17 @@
               <%= project.customer.name =%>
             </th>
             <th class="admin-table-links">
-              <a href="#">Edit</a>
-              <a href="#">Delete</a>
+              <a class="project-window-button project-window-button-edit" href="#">Edit</a>
+              <div class="project-window-edit">
+                <div>
+                  <a href="#close" title="close" class="project-window-button-close"></a>
+                  <h2>Modal window</h2>
+                  <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
+                </div>
+              </div>
+              <a class="project-window-button project-window-button-delete" href="#">Delete</a>
+              <div class="project-window-delete">
+              </div>
             </th>
           </tr>
           <% end %>
