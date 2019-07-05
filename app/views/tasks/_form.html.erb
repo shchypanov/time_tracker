@@ -1,9 +1,12 @@
 <%= form_for(@task, remote: true, html: {'data-type': 'json'}) do |form| %>
 
+  <%= form.label :project_id %>
+  <%= form.select(:project_id, options_for_select( @project_for_select = Project.all.map{|c| [c.name, c.id ]} ), {}, { class: 'admin-select-customer'}) %>
   <div class="field">
     <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
