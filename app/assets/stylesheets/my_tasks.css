@@ -9,14 +9,13 @@ input, .superlabel {
 }
 
 .all-btn {
-  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
 #search-user {
-  width: 100%;
   height: 33px;
   border-radius: 10px;
   border: 1px solid #ced4da;
@@ -33,7 +32,6 @@ input, .superlabel {
 }
 
 #search-date {
-  width: 100%;
   height: 40px;
   border-radius: 10px;
   border: 1px solid #ced4da;
@@ -51,7 +49,6 @@ input, .superlabel {
 }
 
 .all-table {
-
   align-items: center;
   justify-content: center;
   margin-top: 70px;
