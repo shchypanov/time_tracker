@@ -126,5 +126,42 @@
         </tbody>
       </table>
     </div>
-  </div>
+    <div id="admin-create-new-company" class="admin_tabcontent" >
+      <form class="admin-create-new-projects">
+        <div>
+          <label for="admin-company-name">Company name:</label>
+          <input id="admin-company-name" placeholder="Write company name ..." type="text" name="admin-company-name">
+        </div>
+        <div>
+          <label for="admin-company-user">User:</label>
+          <input id="admin-company-user" placeholder="Write user ..." type="text" name="admin-company-user">
+        </div>
+        <div>
+          <input class="admin-submit-company" type="submit" name="" value="Search">
+        </div>
+      </form>
+      <div class="admin-block-info-company">
+        <table class="admin-table-info-company">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>User</th>
+                <th>Edit / Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for i in 0..100 do %>
+              <tr>
+                <th>Company</th>
+                <th>User</th>
+                <th class="admin-table-links">
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </th>
+              </tr>
+              <% end %>
+            </tbody>
+        </table>
+      </div>
+    </div>
 </div>
