@@ -16,10 +16,11 @@ class CustomersController < ApplicationController
   #   redirect_to admin_url
   # end
 
-  def delete
-    @customer.destroy
+  def destroy
+    @customer = Customer.find(params[:id])
     respond_to do |format|
       if @customer.destroy
+        # Project.where(customer_id: params[:id]).destroy_all
         format.js {render :destroy}
       else
         format.js {render :destroy_error}
