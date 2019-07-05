@@ -1,19 +1,27 @@
 class TasksController < ApplicationController
 
-  def create
-    task = Task.new(task_params)
-  if customer.save
-    render json: {}, status: 200
-  else
-    render json: {message: "Error"}, status: 422
+  def new
+    @task = Task.new
+    respond_to do |format|
+      format.js {render :new}
+    end
   end
 
+  def create
+    @task = current_user.tasks.new(task_params)
+    respond_to do |format|
+      if @task.name.present? && @task.save #было написано customer.save
+        format.js {render :created}
+      else
+        format.js {render :created_error}
+      end
+    end
+  end
 
   private
 
   def task_params
     params.require(:task).permit(:project_id, :description, :start_time)
-  end
   end
 
 end
