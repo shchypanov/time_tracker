@@ -42,7 +42,7 @@ input, .superlabel {
 .btn-search {
   background: #1671cc;
   height: 45px;
-  width: 115px;
+  width: 150px;
   display: block;
   border-radius: 10px;
   color: #fff;
@@ -54,9 +54,9 @@ input, .superlabel {
   align-items: center;
   justify-content: center;
   margin-top: 70px;
-  overflow-y:scroll;
-  height:550px;
-  display:block;
+  overflow-y: scroll;
+  height: 550px;
+  display: block;
 }
 
 .name-table {
