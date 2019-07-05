@@ -344,6 +344,9 @@
 .admin-table-info-company tbody th:nth-child(2){
   width: 30%;
 }
+.admin-create-new-projects div:nth-child(3){
+  width: 30%;
+}
 @media screen and (max-width: 1090px) {
 .admin-table-links a{
   width: 40%;
