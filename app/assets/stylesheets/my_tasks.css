@@ -51,6 +51,7 @@ input, .superlabel {
 }
 
 .all-table {
+
   align-items: center;
   justify-content: center;
   margin-top: 70px;
@@ -66,7 +67,7 @@ input, .superlabel {
 .table-task {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   font-size: 14px;
-  border-radius: 10px;
+  border-radius: 50px;
   border-spacing: 0;
   text-align: center;
   width: 100%;
