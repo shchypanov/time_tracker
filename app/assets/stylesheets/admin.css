@@ -26,39 +26,27 @@
 .admin-block-new-customer {
   margin-top: 20px;
 }
-
-.admin-submit {
+.admin-submit, .admin-submit-company{
   position: absolute;
   bottom: 0px;
   background: #007bff;
   color: #fff;
-  border: none;
+  border:none;
+  cursor: pointer;
 }
-
-.admin-submit:hover {
+.admin-submit:hover, .admin-submit-company:hover{
   background: #0069d9;
 }
-
-.user-tasks,
-.admin-block-new-project,
-.admin-table-new-project,
-.admin-block-new-customer,
-.admin-table-new-customer {
+.user-tasks, .admin-block-new-project, .admin-table-new-project, .admin-block-new-customer, .admin-table-new-customer, .admin-block-info-company, .admin-table-info-company{
   width: 100%;
 }
-
-.user-table,
-.admin-block-new-project,
-.admin-block-new-customer {
+.user-table, .admin-block-new-project, .admin-block-new-customer, .admin-block-info-company{
   max-height: 500px;
   box-sizing: border-box;
   overflow-y: scroll;
   margin-top: 50px;
 }
-
-.user-tasks thead,
-.admin-table-new-project thead,
-.admin-table-new-customer thead {
+.user-tasks thead, .admin-table-new-project thead, .admin-table-new-customer thead, .admin-table-info-company thead{
   background-color: #afeeee;
 }
 
@@ -74,10 +62,7 @@
 .user-tasks tbody tr:last-child {
   border-bottom: 1px solid #6c757d;
 }
-
-.user-tasks tbody tr:nth-child(even),
-.admin-table-new-project tbody tr:nth-child(even),
-.admin-table-new-customer tbody tr:nth-child(even) {
+.user-tasks tbody tr:nth-child(even),.admin-table-new-project tbody tr:nth-child(even), .admin-table-new-customer tbody tr:nth-child(even), .admin-table-info-company tbody tr:nth-child(even){
   background-color: #DDDDDD;
 }
 
@@ -115,9 +100,7 @@
 .admin_tablinks:focus {
   outline: none;
 }
-
-#admin-create-new-project,
-#admin-create-new-customers {
+#admin-create-new-project, #admin-create-new-customers, #admin-create-new-company {
   display: none;
 }
 
@@ -260,8 +243,7 @@
 .admin-table-new-customer th:first-child {
   width: 70%;
 }
-
-.admin-table-new-customer thead th {
+.admin-table-new-customer thead th, .admin-table-info-company thead th{
   padding: 5px;
 }
 
@@ -313,7 +295,6 @@
 .registration-container-form .actions br {
   display: none;
 }
-
 .customer-input-error {
   box-shadow: 0 0 0 0.15rem rgba(227, 0, 0, 0.75);
   border-radius: 4px;
@@ -356,5 +337,134 @@
 .project-window-edit:tarh {
   display: block;
   pointer-events: auto;
-  
+
+.admin-table-info-company tbody th:nth-child(1){
+  width: 40%;
+}
+.admin-table-info-company tbody th:nth-child(2){
+  width: 30%;
+}
+@media screen and (max-width: 1090px) {
+.admin-table-links a{
+  width: 40%;
+  padding: 5px 5px;
+}
+}
+@media screen and (max-width: 950px) {
+
+.user-table table, .admin-block-new-project table, .admin-block-new-customer table, .admin-block-info-company table{
+  width: 1200px;
+}
+.search-users div:nth-child(1) {
+    width: 48%;
+}
+.search-users div:nth-child(2) {
+    width: 48%;
+}
+.search-users select{
+  max-width: 100%;
+}
+.search-users div:nth-child(3) {
+    width: 215px;
+    margin-top: 10px;
+}
+.search-users div:nth-child(4), .admin-create-new-projects div:last-child, .admin-create-new-customers div:last-child {
+    width: 200px;
+}
+.admin-create-new-customers div:last-child a {
+  width: 190px;
+  padding: 5px 5px;
+}
+}
+@media screen and (max-width: 750px) {
+
+  .admin_tablinks, #admin-create-user,  #admin-select-customer, .admin-create-new-projects div:last-child a, #admin-create-customer, .admin-create-new-customers div:last-child a {
+    font-size: 18px;
+  }
+  .search-users label, .admin-create-new-projects label, .admin-create-new-customers label, #admin-company-name, #admin-company-user, .admin-submit-company, #admin-select-project option, #admin-select-customer option {
+    font-size: 18px;
+  }
+  #admin-search-user, #admin-select-project, .search-users input{
+    height: 35px;
+    font-size: 18px;
+  }
+  .user-tasks tr th, .admin-table-new-project tr th, .admin-table-new-project tr th a, .admin-table-new-customer tr th a, .admin-table-new-customer tr th, .admin-table-info-company tr th, .admin-table-info-company tr th a{
+    font-size: 18px;
+  }
+  .user-table, .admin-block-new-project, .admin-block-new-customer, .admin-block-info-company{
+    margin-top: 20px;
+  }
+  .admin-create-new-projects div:last-child a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .admin-create-new-projects div:nth-child(1), .admin-create-new-projects div:nth-child(2){
+    width: 48%;
+  }
+  .admin-create-new-projects{
+    flex-wrap: wrap;
+  }
+  .admin-create-new-projects div:nth-child(3){
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .admin-create-new-customers div:last-child a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .admin-create-new-customers div:last-child{
+    width: 28%;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .admin_tablinks{
+    padding: 5px 5px;
+  }
+}
+@media screen and (max-width: 465px) {
+
+    .admin_tablinks{
+    font-size: 16px;
+    height: 60px;
+  }
+  .search-users div:nth-child(1) {
+    width: 100%;
+    margin-top: 10px;
+}
+.search-users div:nth-child(2) {
+    width: 100%;
+    margin-top: 10px;
+}
+.search-users div:nth-child(3) {
+    width: 100%;
+    margin-top: 10px;
+}
+.search-users div:nth-child(4) {
+    width: 100%;
+    margin-top: 10px;
+}
+.admin-submit, .admin-submit-company{
+  position: relative;
+}
+.admin-create-new-projects div:nth-child(1), .admin-create-new-projects div:nth-child(2){
+    width: 100%;
+    margin-top:10px;
+  }
+  .admin-create-new-projects div:nth-child(3){
+    width: 200px;
+  }
+  .admin-create-new-customers div:first-child{
+    width: 100%;
+  }
+  .admin-create-new-customers div:last-child{
+    height: 40px;
+    margin-top: 10px;
+    width: 40%;
+  }
 }
