@@ -11,11 +11,6 @@ class CustomersController < ApplicationController
     end
   end
 
-  # def delete
-  #   Customer.find(params[:id]).destroy
-  #   redirect_to admin_url
-  # end
-
   def destroy
     @customer = Customer.find(params[:id])
     respond_to do |format|

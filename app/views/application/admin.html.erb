@@ -93,7 +93,7 @@
                   <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
                 </div>
               </div>
-              <a class="project-window-button project-window-button-delete" href="#">Delete</a>
+              <%= link_to "Delete", project, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
               <div class="project-window-delete">
               </div>
             </th>
@@ -121,14 +121,13 @@
             </th>
             <th class="admin-table-links">
               <a href="#">Edit</a>
-              <!-- <a href="#">Delete</a> -->
               <%= link_to "Delete", customer, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
             </th>
           </tr>
           <% end %>
         </tbody>
       </table>
-    </div>  
+    </div>
   </div>
   <div id="admin-create-new-company" class="admin_tabcontent" >
     <form class="admin-create-new-projects">
