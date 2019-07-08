@@ -1,13 +1,13 @@
 <%= form_for(@task, remote: true, html: {'data-type': 'json'}) do |form| %>
-<div class="project-select" style="display: inline-block; width: 24%">
+<div class="project-select" style="display: inline-block">
   <%= form.select(:project_id, options_for_select( @project_for_select = Project.all.map{|c| [c.name, c.id ]} ), {}, { class: 'profile_select-client__input', name: "project_id" }) %>
 </div>
-<div class="field" style="display: inline-block; width: 24%">
+<div class="field" style="display: inline-block">
   <%= form.text_field :description, class: "profile_select-client__input", placeholder:"Task description", required:"true" %>
 </div>
-<div class="actions" style="display: inline-block; width: 24%"">
-  <%= form.submit "Start", class: "profile_button profile_button-start"  %>
-  <%= form.submit "Pause", class: "profile_button profile_button-pause"  %>
+<div class="actions" style="display: inline-block">
+  <%= form.submit "Start", class: "profile_button profile_button-start"%>
+  <%= form.submit "Pause", class: "profile_button profile_button-pause"%>
   <%= form.submit "Stop", class: "profile_button profile_button-stop"  %>
 </div>
 <% end %>

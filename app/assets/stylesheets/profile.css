@@ -289,3 +289,7 @@ select option.profile_select-client__option {
   .profile_block-client>div {
     margin-bottom: 20px;
   }
+
+  .new_task > div {
+    margin-right: 20px;
+  }
