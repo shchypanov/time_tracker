@@ -337,7 +337,7 @@
 .project-window-edit:tarh {
   display: block;
   pointer-events: auto;
-
+}
 .admin-table-info-company tbody th:nth-child(1){
   width: 40%;
 }
@@ -348,10 +348,10 @@
   width: 30%;
 }
 @media screen and (max-width: 1090px) {
-.admin-table-links a{
-  width: 40%;
-  padding: 5px 5px;
-}
+  .admin-table-links a{
+    width: 40%;
+    padding: 5px 5px;
+  }
 }
 @media screen and (max-width: 950px) {
 
