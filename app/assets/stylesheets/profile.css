@@ -1,3 +1,4 @@
+
 .profile_container {
   width: 90%;
   margin: 0 auto;
@@ -273,6 +274,7 @@ select option.profile_select-client__option {
   .mystyle {
     overflow-y: hidden;
   }
+}
 
   @media screen and (max-width: 465px) {
     .logo img {
@@ -284,6 +286,6 @@ select option.profile_select-client__option {
     }
   }
 
-  .profile_block-client > div {
-    margin-bottom: 100px;
+  .profile_block-client>div {
+    margin-bottom: 20px;
   }
