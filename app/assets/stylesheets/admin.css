@@ -80,7 +80,7 @@
   padding: 5px 20px;
   border: none;
   position: relative;
-  bottom: -2px;
+  bottom: 4px;
   border: 2px solid #fff;
   border-bottom: 2px solid #dee2e6;
   cursor: pointer;
@@ -100,10 +100,12 @@
 .admin_tablinks:focus {
   outline: none;
 }
-#admin-create-new-project, #admin-create-new-customers, #admin-create-new-company {
+/* #admin-create-new-project, #admin-create-new-customers, #admin-create-new-company {
+  display: none;
+} */
+.admin_tabcontent{
   display: none;
 }
-
 .search-users select {
   height: 50px;
   width: 100%;
@@ -347,6 +349,10 @@
 .admin-create-new-projects div:nth-child(3){
   width: 30%;
 }
+.admin_tablinks{
+  text-decoration: none;
+  color: #000;
+}
 @media screen and (max-width: 1090px) {
   .admin-table-links a{
     width: 40%;
@@ -423,6 +429,9 @@
   .admin-create-new-customers div:last-child{
     width: 28%;
   }
+  .admin_tablinks{
+    bottom: 2px;
+  }
 }
 @media screen and (max-width: 600px) {
 
@@ -434,7 +443,12 @@
 
     .admin_tablinks{
     font-size: 16px;
-    height: 60px;
+    height: 45px;
+    display: flex;
+    bottom: -2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .search-users div:nth-child(1) {
     width: 100%;
@@ -470,4 +484,7 @@
     margin-top: 10px;
     width: 40%;
   }
+}
+.active_tab{
+  display: block;
 }

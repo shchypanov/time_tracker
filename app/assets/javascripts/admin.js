@@ -1,13 +1,19 @@
-function select_tab(evt, select_tab) {
-  var i, admin_tabcontent, admin_tablinks;
-  admin_tabcontent = document.getElementsByClassName("admin_tabcontent");
-  for (i = 0; i < admin_tabcontent.length; i++) {
-    admin_tabcontent[i].style.display = "none";
+window.onload = function() {
+  var tabLinks = document.querySelectorAll('.admin_tablinks');
+  var tabContents = document.querySelectorAll('.admin_tabcontent');
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      var id = this.hash.replace('#', '');
+      for (var j = 0; j < tabContents.length; j++) {
+				var tabContent = tabContents[j];
+        tabContent.classList.remove('active_tab');
+        tabLinks[j].classList.remove('active');
+        if (tabContent.id === id) {
+          tabContent.classList.add('active_tab');
+        }
+      }
+      this.classList.add('active');
+    });
   }
-  admin_tablinks = document.getElementsByClassName("admin_tablinks");
-  for (i = 0; i < admin_tablinks.length; i++) {
-    admin_tablinks[i].className = admin_tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(select_tab).style.display = "block";
-  evt.currentTarget.className += " active";
 }
