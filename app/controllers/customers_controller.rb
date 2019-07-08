@@ -1,6 +1,7 @@
 class CustomersController < ApplicationController
 
   def create
+
     @customer = Customer.new(customer_params)
     respond_to do |format|
       if @customer.name.present? && @customer.save
@@ -8,6 +9,7 @@ class CustomersController < ApplicationController
       else
         format.js {render :created_error}
       end
+
     end
   end
 

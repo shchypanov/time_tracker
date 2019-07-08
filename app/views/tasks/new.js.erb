@@ -1,0 +1,4 @@
+var buttonAddTask = document.createElement('div');
+buttonAddTask.innerHTML = "<%= escape_javascript(render 'form') %>";
+var buttonBlock = document.getElementById("profile_block-client");
+buttonBlock.appendChild(buttonAddTask);
