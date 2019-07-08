@@ -11,7 +11,7 @@
       <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-customers')">Add new customer</button>
     </li>
     <li>
-        <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-company')">Company</button>
+      <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-company')">Company</button>
     </li>
   </ul>
   <div id="admin_search-tabs" class="admin_tabcontent">
@@ -129,7 +129,7 @@
       </table>
     </div>
   </div>
-  <div id="admin-create-new-company" class="admin_tabcontent" >
+  <div id="admin-create-new-company" class="admin_tabcontent">
     <form class="admin-create-new-projects">
       <div>
         <label for="admin-company-name">Company name:</label>
@@ -154,14 +154,14 @@
         </thead>
         <tbody>
           <% for i in 0..100 do %>
-            <tr>
-              <th>Company</th>
-              <th>User</th>
-              <th class="admin-table-links">
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </th>
-            </tr>
+          <tr>
+            <th>Company</th>
+            <th>User</th>
+            <th class="admin-table-links">
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </th>
+          </tr>
           <% end %>
         </tbody>
       </table>

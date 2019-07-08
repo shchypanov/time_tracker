@@ -9,11 +9,11 @@ class CustomersController < ApplicationController
       else
         format.js {render :created_error}
       end
-
     end
   end
 
   def destroy
+
     @customer = Customer.find(params[:id])
     respond_to do |format|
       if @customer.destroy

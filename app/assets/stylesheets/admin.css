@@ -302,6 +302,7 @@
 }
 
 .customer-input-text-error {
+  display: none;
   margin-top: 10px;
   display: none;
   color: #7c7f82;
