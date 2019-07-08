@@ -1,9 +1,0 @@
-<%= form_for(@company, remote: true, do |form| %>
-<div class="field">
-  <%= form.label :name %>
-  <%= form.text_field :name, placeholder: "Name" %>
-</div>
-<div class="actions">
-  <%= form.submit "Add company", type: "submit"%>
-</div>
-<% end %>

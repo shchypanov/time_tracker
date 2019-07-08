@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
     @customers = Customer.all
     @projects = Project.all
     @customer_for_select = Customer.all.map{|c| [c.name, c.id ]}
+    @company = Company.new
   end
 
   private

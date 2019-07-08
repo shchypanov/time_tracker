@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :customers
   resources :projects
   resources :tasks
-  resources :companys
+  resources :companies
 
   get '/profile', to: 'application#profile'
   get '/admin', to: 'application#admin'

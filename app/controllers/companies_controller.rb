@@ -1,5 +1,4 @@
-class CompanysController < ApplicationController
-
+class CompaniesController < ApplicationController
 
   def new
     @company = Company.new
@@ -13,6 +12,7 @@ class CompanysController < ApplicationController
       else
         format.js {render :created_error}
       end
+    end
   end
 
       private
