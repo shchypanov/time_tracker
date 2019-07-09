@@ -1,4 +1,4 @@
-<%= form_for(@task, remote: true, html: {class: 'jopa'}) do |form| %>
+<%= form_for(@task, remote: true, html: {'data-type': 'json'}) do |form| %>
 <div class="project-select" style="display: inline-block">
   <%= form.select(:project_id, options_for_select( @project_for_select = Project.all.map{|c| [c.name, c.id ]} ), {}, { class: 'profile_select-client__input', name: "project_id" }) %>
 </div>
@@ -11,3 +11,4 @@
   <%= form.submit "Stop", class: "profile_button profile_button-stop"  %>
 </div>
 <% end %>
+

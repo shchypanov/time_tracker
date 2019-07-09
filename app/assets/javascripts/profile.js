@@ -1,10 +1,10 @@
-/*document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   var buttonAddTask = document.getElementsByClassName("profile_button-addTask")[0];
   if (buttonAddTask) {
 
     buttonAddTask.onclick = function() {
 
-   var taskBlock = document.querySelector('#profile_container-second .profile_block-client');
+/*   var taskBlock = document.querySelector('#profile_container-second .profile_block-client');
             var newForm = document.createElement('form');
             newForm.innerHTML = (
               '<select class="profile_select-client__input" id="profile_select-client__select" name="project_id">' +
@@ -17,9 +17,9 @@
               '<button class="profile_button profile_button-stop" type="button" id="profile_button-stop">Stop</button>'
             );
 
-            taskBlock.appendChild(newForm);
+            taskBlock.appendChild(newForm);*/
 
-      var buttonStart = document.getElementsByClassName('profile_button-start')[0];
+/*      var buttonStart = document.getElementsByClassName('profile_button-start')[0];
       console.log(buttonStart);
       var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
       var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
@@ -39,7 +39,7 @@
         buttonPause.style.display = "none";
         buttonStop.style.display = "none";
         buttonStart.style.display = "inline-block";
-      }
+      }*/
     };
   };
-});*/
+});
