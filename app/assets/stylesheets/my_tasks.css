@@ -2,6 +2,7 @@
   margin: 0 18%;
   padding: 10px;
   display: block;
+  flex-wrap: wrap;
 }
 
 input, .superlabel {
