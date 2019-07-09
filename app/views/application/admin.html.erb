@@ -79,10 +79,10 @@
           <% @projects.each do |project| %>
           <tr>
             <th>
-              <%= project.name =%>
+              <%= project.name %>
             </th>
             <th>
-              <%= project.customer.name =%>
+              <%= project.customer.name %>
             </th>
             <th class="admin-table-links">
               <a class="project-window-button project-window-button-edit" href="#">Edit</a>
@@ -106,7 +106,7 @@
   <div id="admin-create-new-customers" class="admin_tabcontent">
     <%= render 'customers/form'%>
     <div class="admin-block-new-customer">
-      <table class="admin-table-new-customer">
+      <table  id="admin-table-new-customer" class="admin-table-new-customer">
         <thead>
           <tr>
             <th>Customer</th>
@@ -115,14 +115,14 @@
         </thead>
         <tbody>
           <% @customers.each do |customer| %>
-          <tr>
-            <th id="customer_id">
+          <tr id="customer_<%= customer.id %>" >
+            <th>
               <%= customer.name =%>
             </th>
             <th class="admin-table-links">
               <a href="#">Edit</a>
               <!-- <a href="#">Delete</a> -->
-              <%= link_to "Delete", customer, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
+              <%= link_to "Delete", customer, method: :delete, data: {confirm: "Are you sure?"},class: 'deleteCustomers', remote: true %>
             </th>
           </tr>
           <% end %>
