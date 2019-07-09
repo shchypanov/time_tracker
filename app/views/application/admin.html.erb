@@ -2,19 +2,19 @@
 <div class="wrapper">
   <ul class="tab-admin">
     <li>
-      <button class="admin_tablinks active" type="button" onclick="select_tab(event, 'admin_search-tabs')">Tasks</button>
+      <a href="#admin_search-tabs" class="admin_tablinks active">Tasks</a>
     </li>
     <li>
-      <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-project')">Add new project</button>
+      <a href="#admin-create-new-project" class="admin_tablinks">Add new project</a>
     </li>
     <li>
-      <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-customers')">Add new customer</button>
+      <a href="#admin-create-new-customers" class="admin_tablinks">Add new customer</a>
     </li>
     <li>
-      <button class="admin_tablinks" type="button" onclick="select_tab(event, 'admin-create-new-company')">Company</button>
+        <a href="#admin-create-new-company" class="admin_tablinks">Company</a>
     </li>
   </ul>
-  <div id="admin_search-tabs" class="admin_tabcontent">
+  <div id="admin_search-tabs" class="admin_tabcontent active_tab">
     <form class="search-users" action="" method="post">
       <div>
         <label for="admin-search-user">Name user:</label>
@@ -79,10 +79,10 @@
           <% @projects.each do |project| %>
           <tr>
             <th>
-              <%= project.name =%>
+              <%= project.name %>
             </th>
             <th>
-              <%= project.customer.name =%>
+              <%= project.customer.name %>
             </th>
             <th class="admin-table-links">
               <a class="project-window-button project-window-button-edit" href="#">Edit</a>
@@ -129,7 +129,8 @@
       </table>
     </div>
   </div>
-  <div id="admin-create-new-company" class="admin_tabcontent">
+  <div id="admin-create-new-company" class="admin_tabcontent" >
+      <%= render 'companies/form'%>
     <form class="admin-create-new-projects">
       <div>
         <label for="admin-company-name">Company name:</label>

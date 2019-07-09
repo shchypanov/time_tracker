@@ -1,0 +1,12 @@
+<%= form_for(@company, remote: true, html: {'class':"admin-create-new-customers", 'id': "form-admin-create-new-customers"}) do |form| %>
+<div class="field">
+  <%= form.label :name %>
+  <%= form.text_field :name, placeholder: "Name", class: "admin-create-customer customer-third-class", required: "true" %>
+</div>
+<div class="actions">
+  <%= form.submit "Add company", class: "input-admin-create-customer-submit", type: "submit"%>
+</div>
+<% end %>
+<p class="customer-input-text-error">Error, please enter again!</p>
+
+<!-- #классы и все айди были содраны с формы для кастомеров и оставлены чтоб фронту было потом проще -->
