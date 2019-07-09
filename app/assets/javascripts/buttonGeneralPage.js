@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+/*window.addEventListener('DOMContentLoaded', function() {
 
   var buttonStart = document.getElementsByClassName('profile_button-start');
   var buttonPause = document.getElementsByClassName('profile_button-pause');
@@ -25,4 +25,4 @@ window.addEventListener('DOMContentLoaded', function() {
     buttonStop.style.display = "none";
     buttonStart.style.display = "inline-block";
   }
-});
+});*/
