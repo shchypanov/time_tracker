@@ -9,15 +9,20 @@
       	  <div id="close_nav_mobile" href="#"></div>
       	</li>
         <li class="top-menu__item">
-          <a href="#menu">Menu</a>
+          <%= link_to "My task" %>
         </li>
         <li class="top-menu__item">
-          <a href="#menu">Menu</a>
+          <%= link_to "Today tasks", profile_path %>
+        </li>
+        <li class="top-menu__item">
+          <% if current_user.admin? %>
+            <%= link_to "Admin panel", admin_path  %>
+          <% end %>
         </li>
         <li class="top-menu__item log_out_link">
           <%= link_to "Log out", destroy_user_session_path, method: :delete %>
         </li>
       </ul>
 	</div>
-  </div>	
+  </div>
 </header>
