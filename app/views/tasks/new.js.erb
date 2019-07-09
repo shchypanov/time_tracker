@@ -2,3 +2,8 @@ var buttonAddTask = document.createElement('div');
 buttonAddTask.innerHTML = "<%= escape_javascript(render 'form') %>";
 var buttonBlock = document.getElementById("profile_block-client");
 buttonBlock.appendChild(buttonAddTask);
+
+var lengthForm = document.getElementsByClassName('new_task');
+var lastElementForm = lengthForm[lengthForm.length - 1];
+var lastElementFormLength = lengthForm.length;
+lastElementForm.id = "nubmerForm_" + lastElementFormLength;
