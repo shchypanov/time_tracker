@@ -19,9 +19,9 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     respond_to do |format|
       if @project.destroy
-        format.js {render :destroy}
+        format.js {render :destroyed}
       else
-        format.js {render :destroy_error}
+        format.js {render :destroyed_error}
       end
     end
   end
