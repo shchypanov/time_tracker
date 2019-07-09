@@ -18,9 +18,9 @@ class CustomersController < ApplicationController
     respond_to do |format|
       if @customer.destroy
         # Project.where(customer_id: params[:id]).destroy_all
-        format.js {render :destroy}
+        format.js {render :destroyed}
       else
-        format.js {render :destroy_error}
+        format.js {render :destroyed_error}
       end
     end
   end

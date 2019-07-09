@@ -7,8 +7,15 @@
   <%= form.label :customer_id %>
   <%= form.select(:customer_id, options_for_select( @customer_for_select ), {}, { class: 'admin-select-customer'}) %>
 </div>
+<!-- Название классов внутри этого дива поменять. Катя -->
+<div class="project-select-company">
+  <%= form.label :company_id %>
+  <%= form.select(:company_id, options_for_select( @company_for_select )) %>
+</div>
+
 <div class="actions">
   <%= form.submit "Add project", class: "admin-create-user-submit", type: "submit" %>
 </div>
 <% end %>
 <p class="customer-input-text-error">Error, please enter again!</p>
+<!--  -->
