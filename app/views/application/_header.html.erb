@@ -1,28 +1,28 @@
 <div id="overlay"></div>
 <header>
   <div class="profile_container">
-  	<div class="header">
+    <div class="header">
       <a class="logo" href=""><img src="/assets/logo.png" alt="logo header"></a>
-      <button id="sandwich_open" ></button>
+      <button id="sandwich_open"></button>
       <ul id="top-menu" class="top-menu">
-      	<li class="close_mobile_button top-menu__item">
-      	  <div id="close_nav_mobile" href="#"></div>
-      	</li>
+        <li class="close_mobile_button top-menu__item">
+          <div id="close_nav_mobile" href="#"></div>
+        </li>
         <li class="top-menu__item">
           <%= link_to "My task" %>
         </li>
         <li class="top-menu__item">
           <%= link_to "Today tasks", profile_path %>
         </li>
-        <li class="top-menu__item">
-          <% if current_user.admin? %>
-            <%= link_to "Admin panel", admin_path  %>
-          <% end %>
-        </li>
+        <% if show_link_to_admin_panel? %>
+          <li class="top-menu__item">
+            <%= link_to "Admin panel", admin_path %>
+          </li>
+        <% end %>
         <li class="top-menu__item log_out_link">
           <%= link_to "Log out", destroy_user_session_path, method: :delete %>
         </li>
       </ul>
-	</div>
+    </div>
   </div>
 </header>
