@@ -1,13 +1,18 @@
-var buttonAddTask = document.getElementsByClassName("profile_button-addTask")[0];
-var buttonStart = document.getElementsByClassName('profile_button-start')[0];
-var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
-var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
-console.log(buttonPause);
-console.log(buttonStart);
-/*
-buttonPause.style.display = "inline-block";
-buttonStop.style.display = "inline-block";
-buttonStart.style.display = "none";*/
+var buttonAddTask = document.getElementsByClassName("profile_button-addTask");
+var buttonStart = document.querySelectorAll('.profile_button-start');
+var buttonPause = document.getElementsByClassName('profile_button-pause');
+var buttonStop = document.getElementsByClassName('profile_button-stop');
 
-var parent = buttonStart.closest(".new_task");
-console.log(parent.id);
+for (let i = 0; i < buttonStart.length; i++) {
+  buttonStart[i].onclick = function(e) {
+    var closestButtonStart = this;
+    closestButtonStart.style.display = "none";
+    console.log(closestButtonStart);
+    var closestButtonPause = closestButtonStart.nextElementSibling;
+    closestButtonPause.style.display = "inline-block";
+    console.log(closestButtonPause);
+    var closestButtonStop = closestButtonPause.nextElementSibling;
+    closestButtonStop.style.display = "inline-block";
+    console.log(closestButtonStop);
+  };
+};
