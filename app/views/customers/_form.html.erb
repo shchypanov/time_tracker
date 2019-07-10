@@ -4,7 +4,7 @@
   <%= form.text_field :name, placeholder: "Name", class: "admin-create-customer customer-third-class", required: "true" %>
 </div>
 <div class="actions">
-  <%= form.submit "Add customer", class: "input-admin-create-customer-submit", type: "submit"%>
+  <%= form.submit change_add_button_to_edit_button(@customer.id), class: "input-admin-create-customer-submit", type: "submit"%>
 </div>
 <% end %>
 <p class="customer-input-text-error">Error, please enter again!</p>
