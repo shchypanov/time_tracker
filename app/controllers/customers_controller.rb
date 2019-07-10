@@ -23,7 +23,9 @@ class CustomersController < ApplicationController
   def update
     @customer = Customer.find(params[:id])
     @customer.update(customer_params)
-    redirect_to admin_path
+    respond_to do |format|
+      format.js {render :updated}
+    end
   end
 
   def destroy

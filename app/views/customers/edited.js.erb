@@ -1,5 +1,14 @@
-let overlay = document.querySelector(".overlay");
-let modal = document.querySelector(".modal");
+
+var overlay = document.querySelector(".overlay");
+var modal = document.querySelector(".modal");
+
 modal.innerHTML = "<%= escape_javascript(render 'form') %>";
 overlay.classList.add('open');
 modal.classList.add('open');
+
+overlay.onclick = closeModalWindow;
+
+function closeModalWindow() {
+  overlay.classList.remove('open');
+  modal.classList.remove('open');
+}
