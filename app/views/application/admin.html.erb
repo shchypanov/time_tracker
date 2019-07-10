@@ -120,7 +120,7 @@
               <%= customer.name =%>
             </th>
             <th class="admin-table-links">
-              <%= link_to "Edit",  edit_customer_path(@customer) remote: true %>
+              <%= link_to "Edit",  edit_customer_path(customer), remote: true %>
               <%= link_to "Delete", customer, method: :delete, data: {confirm: "Are you sure?"},class: 'deleteCustomers', remote: true %>
             </th>
           </tr>

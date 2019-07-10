@@ -13,6 +13,19 @@ class CustomersController < ApplicationController
     end
   end
 
+  def edit
+    @customer = Customer.find(params[:id])
+    respond_to do |format|
+      format.js {render :edited}
+    end
+  end
+
+  def update
+    @customer = Customer.find(params[:id])
+    @customer.update(customer_params)
+    redirect_to admin_path
+  end
+
   def destroy
     @customer = Customer.find(params[:id])
     respond_to do |format|
