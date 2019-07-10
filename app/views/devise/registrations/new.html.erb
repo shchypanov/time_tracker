@@ -20,13 +20,13 @@
       <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
     </div>
     <div class="field-company">
-      <%= f.label :company %>
-      <%= f.select(:companies_id, options_for_select( @companies_for_select ), {}, { class: 'admin-select-customer'}) %>
+      <%= f.label :company_id %>
+      <%= f.select(:company_id, options_for_select( @company_for_select ), {}, { class: 'admin-select-customer'}) %>
     </div>
     <div class="actions">
       <%= f.submit "Sign up" %>
       <%= render "devise/shared/links" %>
     </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 </div>
