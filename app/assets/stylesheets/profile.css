@@ -248,14 +248,11 @@ select option.profile_select-client__option {
   overflow-y: hidden;
 }
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 465px) {
-.logo img {
-    height: 60px;
+  .logo img {
+      height: 60px;
+  }
+  .header {
+    height: 70px;
+  }
 }
-.header {
-  height: 70px;
-}
-}
->>>>>>> admin_adaptive_page

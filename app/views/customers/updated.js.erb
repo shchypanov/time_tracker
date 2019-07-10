@@ -1,0 +1,9 @@
+var inputUpdateCustomer = document.querySelector(".modal .customer-third-class");
+
+overlay.classList.remove('open');
+modal.classList.remove('open');
+
+var valueInputUpdateCustomer = inputUpdateCustomer.value;
+var rowTableUpdateCustomer = customer_<%= @customer.id %>.children[0];
+
+rowTableUpdateCustomer.innerHTML = valueInputUpdateCustomer;
