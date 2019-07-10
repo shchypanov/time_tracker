@@ -10,7 +10,7 @@ class TasksController < ApplicationController
   def create
     @task = current_user.tasks.new(task_params)
     respond_to do |format|
-      if @task.name.present? && @task.save
+      if @task.description.present? && @task.save
         format.js {render :created}
       else
         format.js {render :created_error}

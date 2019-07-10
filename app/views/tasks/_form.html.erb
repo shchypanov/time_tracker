@@ -1,4 +1,4 @@
-<%= form_for(@task, remote: true, html: {'data-type': 'json'}) do |form| %>
+<%= form_for(@task, remote: true, html: {}) do |form| %>
 <div class="project-select" style="display: inline-block">
   <%= form.select(:project_id, options_for_select( @project_for_select = Project.all.map{|c| [c.name, c.id ]} ), {}, { class: 'profile_select-client__input', name: "project_id" }) %>
 </div>
@@ -7,8 +7,9 @@
 </div>
 <div class="actions" style="display: inline-block">
   <%= form.submit "Start", class: "profile_button profile_button-start"%>
-  <%= form.submit "Pause", class: "profile_button profile_button-pause"%>
-  <%= form.submit "Stop", class: "profile_button profile_button-stop"  %>
+
+  <%= link_to "Pause", tasks_path,  remote: true, class: "profile_button profile_button-pause", href: "/tasks/stoped.js.erb?params=pause" %>
+  <%= link_to "Stop", tasks_path,  remote: true, class: "profile_button profile_button-stop", href: "/tasks/stoped.js.erb"  %>
+
 </div>
 <% end %>
-
