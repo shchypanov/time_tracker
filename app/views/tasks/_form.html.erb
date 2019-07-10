@@ -2,7 +2,7 @@
 
   <div class="project-select">
   <%= form.label :project_id %>
-  <%= form.select(:project_id, options_for_select( @project_for_select = Project.all.map{|c| [c.name, c.id ]} ), {}, { class: 'profile_select-client__input', name: "project_id" }) %>
+  <%= form.select(:project_id, options_for_select( @project_for_select ), {}, { class: 'profile_select-client__input', name: "project_id" }) %>
   </div>
 
   <div class="field">
@@ -14,23 +14,3 @@
     <%= form.submit "Start", class: "profile_button profile_button-start"  %>
   </div>
 <% end %>
-
-
-<!-- class="profile_select-client__input"
-id="profile_select-client__select"
-name="project_id"
-
-select
-
-class="profile_select-client__option"
-
-opt
-class="profile_select-client__input"
-
-id="profile_select-client__input"
-name="description"
-
-butto
-
-class="profile_button profile_button-start"
-id="profile_button-start" -->

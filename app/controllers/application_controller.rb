@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     @projects = Project.all
     @customer_for_select = Customer.all.map{|c| [c.name, c.id ]}
     @company = Company.new
-    # @companies_for_select = Company.all.map{|c| [c.name, c.id ]}
+    @company_for_select = Company.all.map{|m| [m.name, m.id ]}
   end
 
   private

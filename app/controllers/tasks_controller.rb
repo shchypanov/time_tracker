@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
 
   def new
+    @project_for_select = Project.all.map{|c| [c.name, c.id ]}
     @task = Task.new
     respond_to do |format|
       format.js {render :new}
