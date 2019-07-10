@@ -7,9 +7,7 @@
 </div>
 <div class="actions" style="display: inline-block">
   <%= form.submit "Start", class: "profile_button profile_button-start"%>
-
-  <%= link_to "Pause", tasks_path,  remote: true, class: "profile_button profile_button-pause", href: "/tasks/stoped.js.erb?params=pause" %>
-  <%= link_to "Stop", tasks_path,  remote: true, class: "profile_button profile_button-stop", href: "/tasks/stoped.js.erb"  %>
-
+  <%= form.submit "Pause", class: "profile_button profile_button-pause"%>
+  <%= form.submit "Stop", class: "profile_button profile_button-stop"  %>
 </div>
 <% end %>

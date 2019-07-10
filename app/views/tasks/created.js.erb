@@ -1,27 +1,13 @@
-
-  var buttonAddTask = document.getElementsByClassName("profile_button-addTask")[0];
-  var buttonStart = document.getElementsByClassName('profile_button-start')[0];
-  var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
-  var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
-  console.log(buttonStart);
-
-
-
+var buttonAddTask = document.getElementsByClassName("profile_button-addTask")[0];
+var buttonStart = document.getElementsByClassName('profile_button-start')[0];
+var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
+var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
+console.log(buttonPause);
+console.log(buttonStart);
 /*
+buttonPause.style.display = "inline-block";
+buttonStop.style.display = "inline-block";
+buttonStart.style.display = "none";*/
 
-buttonPause.onclick = function() {
-  buttonPause.style.display = "none";
-  buttonStop.style.display = "inline-block";
-  buttonStart.style.display = "inline-block";
-  var buttonStart = document.getElementsByClassName('profile_button-start')[0];
-  var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
-  var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
-}
-buttonStop.onclick = function() {
-  buttonPause.style.display = "none";
-  buttonStop.style.display = "none";
-  buttonStart.style.display = "inline-block";
-  var buttonStart = document.getElementsByClassName('profile_button-start')[0];
-  var buttonPause = document.getElementsByClassName('profile_button-pause')[0];
-  var buttonStop = document.getElementsByClassName('profile_button-stop')[0];
-}*/
+var parent = buttonStart.closest(".new_task");
+console.log(parent.id);
