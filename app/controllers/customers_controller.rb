@@ -1,5 +1,7 @@
 class CustomersController < ApplicationController
 
+  before_action :set_customer, only: [:edit, :update, :destroy]
+
   def create
 
     @customer = Customer.new(customer_params)
@@ -14,14 +16,12 @@ class CustomersController < ApplicationController
   end
 
   def edit
-    @customer = Customer.find(params[:id])
     respond_to do |format|
       format.js {render :edited}
     end
   end
 
   def update
-    @customer = Customer.find(params[:id])
     @customer.update(customer_params)
     respond_to do |format|
       format.js {render :updated}
@@ -29,7 +29,6 @@ class CustomersController < ApplicationController
   end
 
   def destroy
-    @customer = Customer.find(params[:id])
     respond_to do |format|
       if @customer.destroy
         # Project.where(customer_id: params[:id]).destroy_all
@@ -45,4 +44,9 @@ class CustomersController < ApplicationController
   def customer_params
     params.require(:customer).permit(:name)
   end
+
+  def set_customer
+    @customer = Customer.find(params[:id])
+  end
+
 end
