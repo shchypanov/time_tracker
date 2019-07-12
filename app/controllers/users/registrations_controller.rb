@@ -6,6 +6,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
   def new
+    @company = Company.new
+    @companies_for_select = Company.all.map{|m| [m.name, m.id ]}
     super
   end
 
